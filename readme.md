@@ -41,6 +41,8 @@ const Example = () => (
 )
 ```
 
+**IMPORTANT: FOR FULL PROPS CHECK README OF BIGHEADS AND README OF REACT NATIVE BIGHEADS**
+
 ### Props
 
 - [`accessory`](#accessory)
