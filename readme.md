@@ -41,8 +41,6 @@ const Example = () => (
 )
 ```
 
-**IMPORTANT: FOR FULL PROPS CHECK README OF BIGHEADS AND README OF REACT NATIVE BIGHEADS**
-
 ### Props
 
 - [`accessory`](#accessory)
@@ -85,17 +83,7 @@ The color of the background
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
-| enum('blue', 'green', 'red', 'orange', 'yellow', 'turqoise', 'pink', 'purple') | No       | Random |
-
----
-
-### `bgShape`
-
-The shape of the background
-
-| Type     | Required | Default |
-| -------- | -------- | ------- |
-| enum('circle', 'square', 'squircle') | No       | Random |
+| enum('blue', 'green', 'red', 'none', 'transparent') | No       | Random |
 
 ---
 
@@ -129,26 +117,6 @@ The color of the clothes
 
 ---
 
-### `containerProps`
-
-Props to be passed to the container element ([View](https://reactnative.dev/docs/view))
-
-| Type     | Required |
-| -------- | -------- |
-| [View.props](https://reactnative.dev/docs/view#props) | No       |
-
----
-
-### `containerStyles`
-
-Styles to be applied to the container element ([View](https://reactnative.dev/docs/view))
-
-| Type     | Required |
-| -------- | -------- |
-| [Style](https://reactnative.dev/docs/style) | No       |
-
----
-
 ### `eyebrows`
 
 Type of eyebrows
@@ -165,7 +133,7 @@ Type of eyes
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
-| enum('normal', 'leftTwitch', 'happy', 'content', 'squint', 'simple', 'dizzy', 'wink', 'hearts', 'crazy', 'cute', 'dollars', 'stars', 'cyborg', 'simplePatch', 'piratePatch') | No       | Random |
+| enum('normal', 'leftTwitch', 'happy', 'content', 'squint', 'simple', 'dizzy', 'wink', 'heart', 'crazy', 'cute', 'dollars', 'stars', 'cyborg', 'simplePatch', 'piratePatch') | No       | Random |
 
 ---
 
@@ -256,18 +224,6 @@ Type of mouth
 | Type     | Required | Default |
 | -------- | -------- | ------- |
 | enum('grin', 'sad', 'openSmile', 'lips', 'open', 'serious', 'tongue', 'piercedTongue', 'vomitingRainbow') | No       | Random |
-
----
-
-### `showBackground`
-
-Whether or not to display the background color
-
-When `true` it cuts off everything below the avatar otherwise it won't clip off any of the avatar
-
-| Type     | Required | Default |
-| -------- | -------- | ------- |
-| boolean  | No       | true    |
 
 ---
 
