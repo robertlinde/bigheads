@@ -227,16 +227,6 @@ Type of mouth
 
 ---
 
-### `size`
-
-Size of the avatar
-
-| Type     | Required | Default |
-| -------- | -------- | ------- |
-| number   | No       | 100     |
-
----
-
 ### `skinTone`
 
 The color of the skin
@@ -244,6 +234,30 @@ The color of the skin
 | Type     | Required | Default |
 | -------- | -------- | ------- |
 | enum('light', 'yellow', 'brown', 'dark', 'red', 'black') | No       | Random |
+
+### `mask`
+
+Show Mask
+
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| boolean  | No       | Random  |
+
+### `faceMask`
+
+Show face mask
+
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| boolean  | No       | Random  |
+
+### `faceMaskColor`
+
+The color of the face mask
+
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| enum('white', 'blue', 'black', 'green', 'red') | No       | Random |
 
 ---
 
