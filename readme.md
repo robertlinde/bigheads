@@ -68,13 +68,13 @@ const Example = () => (
 
 ## Props
 
-### `accessory`
+### `showBackground`
 
-Type of accessory
+If set to true it displays the avatar in a circle and cuts off everything below it. If set to false, it won't display the circle, and won't clip off any of the avatar.
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
-| enum('none', 'roundGlasses', 'tinyGlasses', 'shades', 'hoopEarrings') | No       | Random |
+| boolean  | No       | Random  |
 
 ---
 
@@ -95,6 +95,16 @@ The shape of the background
 | Type     | Required | Default |
 | -------- | -------- | ------- |
 | enum('circle', 'square', 'squircle') | No       | Random |
+
+---
+
+### `accessory`
+
+Type of accessory
+
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| enum('none', 'roundGlasses', 'tinyGlasses', 'shades', 'hoopEarrings') | No       | Random |
 
 ---
 
@@ -246,13 +256,7 @@ The color of the skin
 | -------- | -------- | ------- |
 | enum('light', 'yellow', 'brown', 'dark', 'red', 'black') | No       | Random |
 
-### `showBackground`
-
-If set to true it displays the avatar in a circle and cuts off everything below it. If set to false, it won't display the circle, and won't clip off any of the avatar.
-
-| Type     | Required | Default |
-| -------- | -------- | ------- |
-| boolean  | No       | Random  |
+---
 
 ### `faceMask`
 
@@ -261,6 +265,8 @@ If set to true the avatar will be wearing a face mask
 | Type     | Required | Default |
 | -------- | -------- | ------- |
 | boolean  | No       | Random  |
+
+---
 
 ### `faceMaskColor`
 
