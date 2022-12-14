@@ -51,10 +51,11 @@ import { options } from 'dist/index'
 
 ### Props
 
-* [`accessory`](#accessory)
-* [`body`](#body)
+* [`showBackground`](#showBackground)
 * [`bgColor`](#bgcolor)
 * [`bgShape`](#bgshape)
+* [`accessory`](#accessory)
+* [`body`](#body)
 * [`clothing`](#clothing)
 * [`clothingColor`](#clothingcolor)
 * [`eyebrows`](#eyebrows)
@@ -67,10 +68,10 @@ import { options } from 'dist/index'
 * [`hatColor`](#hatcolor)
 * [`lashes`](#lashes)
 * [`lipColor`](#lipcolor)
-* [`showBackground`](#showBackground)
-* [`faceMask`](#faceMask)
 * [`mouth`](#mouth)
 * [`skinTone`](#skinTone)
+* [`faceMask`](#faceMask)
+* [`faceMaskColor`](#faceMaskColor)
 # Reference
 
 ## Props
