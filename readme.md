@@ -82,7 +82,7 @@ If set to true it displays the avatar in a circle and cuts off everything below 
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
-| boolean  | No       | Random  |
+| true, false  | No       | Random  |
 
 ---
 
@@ -92,7 +92,7 @@ The color of the background
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
-| enum('blue', 'green', 'red', 'none', 'transparent') | No       | Random |
+| 'blue', 'green', 'red', 'none', 'transparent' | No       | Random |
 
 ---
 
@@ -102,7 +102,7 @@ The shape of the background
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
-| enum('circle', 'square', 'squircle') | No       | Random |
+| 'circle', 'square', 'squircle' | No       | Random |
 
 ---
 
@@ -112,7 +112,7 @@ Type of accessory
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
-| enum('none', 'roundGlasses', 'tinyGlasses', 'shades', 'hoopEarrings') | No       | Random |
+| 'none', 'roundGlasses', 'tinyGlasses', 'shades', 'hoopEarrings' | No       | Random |
 
 ---
 
@@ -122,7 +122,7 @@ Type of body
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
-| enum('chest', 'breasts') | No | Random |
+| 'chest', 'breasts' | No | Random |
 
 ---
 
@@ -132,7 +132,7 @@ Type of cloth
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
-| enum('naked', 'shirt', 'dressShirt', 'vneck', 'tankTop', 'dress', 'denimJacket', 'hoodie', 'chequeredShirt', 'chequeredShirtDark') | No       | Random |
+| 'naked', 'shirt', 'dressShirt', 'vneck', 'tankTop', 'dress', 'denimJacket', 'hoodie', 'chequeredShirt', 'chequeredShirtDark' | No       | Random |
 
 ---
 
@@ -142,7 +142,7 @@ The color of the clothes
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
-| enum('white', 'blue', 'black', 'green', 'red') | No       | Random |
+| 'white', 'blue', 'black', 'green', 'red' | No       | Random |
 
 ---
 
@@ -152,7 +152,7 @@ Type of eyebrows
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
-| enum('raised', 'leftLowered', 'serious', 'angry', 'concerned') | No       | Random |
+| 'raised', 'leftLowered', 'serious', 'angry', 'concerned' | No       | Random |
 
 ---
 
@@ -162,7 +162,7 @@ Type of eyes
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
-| enum('normal', 'leftTwitch', 'happy', 'content', 'squint', 'simple', 'dizzy', 'wink', 'heart', 'crazy', 'cute', 'dollars', 'stars', 'cyborg', 'simplePatch', 'piratePatch') | No       | Random |
+| 'normal', 'leftTwitch', 'happy', 'content', 'squint', 'simple', 'dizzy', 'wink', 'heart', 'crazy', 'cute', 'dollars', 'stars', 'cyborg', 'simplePatch', 'piratePatch' | No       | Random |
 
 ---
 
@@ -172,7 +172,7 @@ Type of facial hair
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
-| enum('none', 'stubble', 'mediumBeard', 'goatee') | No       | Random |
+| 'none', 'stubble', 'mediumBeard', 'goatee' | No       | Random |
 
 ---
 
@@ -182,7 +182,7 @@ Type of graphic over the t-shirts
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
-| enum('none', 'redwood', 'gatsby', 'vue', 'react', 'graphQL', 'donut', 'rainbow') | No       | Random |
+| 'none', 'redwood', 'gatsby', 'vue', 'react', 'graphQL', 'donut', 'rainbow' | No       | Random |
 
 ---
 
@@ -192,7 +192,7 @@ Type of hair
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
-| enum('none', 'long', 'bun', 'short', 'pixie', 'balding', 'buzz', 'afro', 'bob', 'mohawk') | No       | Random |
+| 'none', 'long', 'bun', 'short', 'pixie', 'balding', 'buzz', 'afro', 'bob', 'mohawk' | No       | Random |
 
 ---
 
@@ -202,7 +202,7 @@ The color of the hair
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
-| enum('blonde', 'orange', 'black', 'white', 'brown', 'blue', 'pink') | No       | Random |
+| 'blonde', 'orange', 'black', 'white', 'brown', 'blue', 'pink' | No       | Random |
 
 ----
 
@@ -212,7 +212,7 @@ Type of hat
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
-| enum('none', 'beanie', 'turban', 'party', 'hijab') | No       | Random |
+| 'none', 'beanie', 'turban', 'party', 'hijab' | No       | Random |
 
 ---
 
@@ -222,7 +222,7 @@ The color of the hat
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
-| enum('white', 'blue', 'black', 'green', 'red') | No       | Random |
+| 'white', 'blue', 'black', 'green', 'red' | No       | Random |
 
 ---
 
@@ -232,7 +232,7 @@ Show lashes
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
-| boolean  | No       | Random  |
+| true, false  | No       | Random  |
 
 ---
 
@@ -242,7 +242,7 @@ The color of the lips
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
-| enum('red', 'purple', 'pink', 'turqoise', 'green') | No       | Random |
+| 'red', 'purple', 'pink', 'turqoise', 'green' | No       | Random |
 
 ---
 
@@ -252,7 +252,7 @@ Type of mouth
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
-| enum('grin', 'sad', 'openSmile', 'lips', 'open', 'serious', 'tongue', 'piercedTongue', 'vomitingRainbow') | No       | Random |
+| 'grin', 'sad', 'openSmile', 'lips', 'open', 'serious', 'tongue', 'piercedTongue', 'vomitingRainbow' | No       | Random |
 
 ---
 
@@ -262,7 +262,7 @@ The color of the skin
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
-| enum('light', 'yellow', 'brown', 'dark', 'red', 'black') | No       | Random |
+| 'light', 'yellow', 'brown', 'dark', 'red', 'black' | No       | Random |
 
 ---
 
@@ -272,7 +272,7 @@ If set to true the avatar will be wearing a face mask
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
-| boolean  | No       | Random  |
+| true, false  | No       | Random  |
 
 ---
 
@@ -282,7 +282,7 @@ The color of the face mask
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
-| enum('white', 'blue', 'black', 'green', 'red') | No       | Random |
+| 'white', 'blue', 'black', 'green', 'red' | No       | Random |
 
 ---
 
