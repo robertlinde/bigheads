@@ -14,7 +14,7 @@
 then, in your app:
 
 ```jsx
-import { BigHeads } from 'dist/index'
+import { BigHead } from 'dist/index'
 
 const Example = () => (
   <BigHead
