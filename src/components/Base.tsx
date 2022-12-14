@@ -10,7 +10,7 @@ import { BodyProps } from './bodies/types'
 import { HatProps } from './hats/types'
 import { EyeProps } from './eyes/types'
 import { DressShirt } from './clothing/DressShirt'
-import { FaceMask } from './FaceMask'
+import { FaceMask } from './faceMask/FaceMask'
 import { BgShapeProps, BgMaskProps } from './backgrounds/types'
 
 interface BaseProps {
