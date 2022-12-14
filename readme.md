@@ -237,7 +237,7 @@ The color of the skin
 
 ### `mask`
 
-Show Mask
+If set to true it displays the avatar in a circle and cuts off everything below it. If set to false, it won't display the circle, and won't clip off any of the avatar.
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
@@ -245,7 +245,7 @@ Show Mask
 
 ### `faceMask`
 
-Show face mask
+If set to true the avatar will be wearing a face mask
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
