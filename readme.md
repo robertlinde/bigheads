@@ -22,7 +22,8 @@ const Example = () => (
     body="chest"
     bgColor="blue"
     clothing="tankTop"
-    clothingColor="black"
+    bgShape='square'
+    bgColor="black"
     eyebrows="angry"
     eyes="wink"
     facialHair="mediumBeard"
@@ -39,6 +40,11 @@ const Example = () => (
     skinTone="brown"
   />
 )
+```
+
+To retrieve a object with all options possible, use
+```jsx
+import { options } from 'dist/index'
 ```
 
 ### Props
