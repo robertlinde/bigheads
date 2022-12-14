@@ -287,8 +287,8 @@ The color of the face mask
 
 # Authors
 * Some portions of this code belong to the [Big Heads authors](https://github.com/RobertBroersma/bigheads) which are distributed under the [MIT License](https://github.com/RobertBroersma/bigheads/blob/main/LICENSE)
-* Some portions of this code belong to the [react-native-bigheads authors] which are distributed under the [MIT License](https://github.com/felipecespedes/react-native-bigheads/blob/master/LICENSE)
-* Robert Linde
+* Some portions of this code belong to the [react-native-bigheads authors](https://github.com/felipecespedes/react-native-bigheads) which are distributed under the [MIT License](https://github.com/felipecespedes/react-native-bigheads/blob/master/LICENSE)
+* [Robert Linde](https://github.com/robertlinde)
 # License
 
 This project is licensed under the MIT License
