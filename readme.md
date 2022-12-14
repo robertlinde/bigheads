@@ -74,7 +74,7 @@ Type of accessory
 
 | Type     | Required | Default |
 | -------- | -------- | ------- |
-| enum('none', 'roundGlasses', 'tinyGlasses', 'shades', 'faceMask', 'hoopEarrings') | No       | Random |
+| enum('none', 'roundGlasses', 'tinyGlasses', 'shades', 'hoopEarrings') | No       | Random |
 
 ---
 

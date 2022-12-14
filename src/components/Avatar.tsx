@@ -63,7 +63,6 @@ import { GraphQLGraphic } from './clothingGraphic/GraphQL'
 import { Tongue } from './mouths/Tongue'
 import { DressShirt } from './clothing/DressShirt'
 
-import { FaceMask } from './accessories/FaceMask'
 import { HoopEarrings } from './accessories/HoopEarrings'
 import { DenimJacket } from './clothing/DenimJacket'
 import { Hoodie } from './clothing/Hoodie'
@@ -177,8 +176,7 @@ export const accessoryMap = {
   roundGlasses: RoundGlasses,
   tinyGlasses: TinyGlasses,
   shades: Shades,
-  hoopEarrings: HoopEarrings,
-  faceMask: FaceMask
+  hoopEarrings: HoopEarrings
 }
 
 export const graphicsMap = {
