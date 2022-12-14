@@ -18,11 +18,13 @@ import { BigHead } from 'dist/index'
 
 const Example = () => (
   <BigHead
+    showBackground={true}
+    bgColor="blue"
+    bgShape='square'
     accessory="shades"
     body="chest"
-    bgColor="blue"
     clothing="tankTop"
-    bgShape='square'
+    clothingColor='red'
     eyebrows="angry"
     eyes="wink"
     facialHair="mediumBeard"
@@ -31,44 +33,44 @@ const Example = () => (
     hairColor="black"
     hat="none"
     hatColor="green"
-    lashes="false"
+    lashes={false}
     lipColor="purple"
-    showBackground={true}
-    faceMask={true}
     mouth="open"
     skinTone="brown"
+    faceMask={true}
+    faceMaskColor='blue'
   />
 )
 ```
 
 To retrieve a object with all options possible, use
+
 ```jsx
 import { options } from 'dist/index'
 ```
 
 ### Props
 
-- [`accessory`](#accessory)
-- [`body`](#body)
-- [`bgColor`](#bgcolor)
-- [`bgShape`](#bgshape)
-- [`clothing`](#clothing)
-- [`clothingColor`](#clothingcolor)
-- [`eyebrows`](#eyebrows)
-- [`eyes`](#eyes)
-- [`facialHair`](#facialhair)
-- [`graphic`](#graphic)
-- [`hair`](#hair)
-- [`hairColor`](#haircolor)
-- [`hat`](#hat)
-- [`hatColor`](#hatcolor)
-- [`lashes`](#lashes)
-- [`lipColor`](#lipcolor)
-- [`showBackground`](#showBackground)
-- [`faceMask`](#faceMask)
-- [`mouth`](#mouth)
-- [`skinTone`](#skinTone)
-
+* [`accessory`](#accessory)
+* [`body`](#body)
+* [`bgColor`](#bgcolor)
+* [`bgShape`](#bgshape)
+* [`clothing`](#clothing)
+* [`clothingColor`](#clothingcolor)
+* [`eyebrows`](#eyebrows)
+* [`eyes`](#eyes)
+* [`facialHair`](#facialhair)
+* [`graphic`](#graphic)
+* [`hair`](#hair)
+* [`hairColor`](#haircolor)
+* [`hat`](#hat)
+* [`hatColor`](#hatcolor)
+* [`lashes`](#lashes)
+* [`lipColor`](#lipcolor)
+* [`showBackground`](#showBackground)
+* [`faceMask`](#faceMask)
+* [`mouth`](#mouth)
+* [`skinTone`](#skinTone)
 # Reference
 
 ## Props
@@ -284,9 +286,9 @@ The color of the face mask
 ---
 
 # Authors
-- Some portions of this code belong to the [Big Heads authors](https://github.com/RobertBroersma/bigheads) which are distributed under the [MIT License](https://github.com/RobertBroersma/bigheads/blob/main/LICENSE)
-- Some portions of this code belong to the [react-native-bigheads authors] which are distributed under the [MIT License](https://github.com/felipecespedes/react-native-bigheads/blob/master/LICENSE)
-- Robert Linde
-
+* Some portions of this code belong to the [Big Heads authors](https://github.com/RobertBroersma/bigheads) which are distributed under the [MIT License](https://github.com/RobertBroersma/bigheads/blob/main/LICENSE)
+* Some portions of this code belong to the [react-native-bigheads authors] which are distributed under the [MIT License](https://github.com/felipecespedes/react-native-bigheads/blob/master/LICENSE)
+* Robert Linde
 # License
+
 This project is licensed under the MIT License
