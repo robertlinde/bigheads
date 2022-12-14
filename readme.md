@@ -59,7 +59,7 @@ const Example = () => (
 - [`hatColor`](#hatcolor)
 - [`lashes`](#lashes)
 - [`lipColor`](#lipcolor)
-- [`mask`](#mask)
+- [`showBackground`](#showBackground)
 - [`faceMask`](#faceMask)
 - [`mouth`](#mouth)
 - [`skinTone`](#skinTone)
