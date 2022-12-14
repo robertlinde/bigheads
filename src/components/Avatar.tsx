@@ -85,6 +85,19 @@ import * as Hijab from './hats/Hijab'
 import { PiercedTongue } from './mouths/PiercedTongue'
 import { VomitingRainbow } from './mouths/VomitingRainbow'
 
+import { BgCircle } from './backgrounds/BgCircle'
+import { BgSquare } from './backgrounds/BgSquare'
+import { BgSquircle } from './backgrounds/BgSquircle'
+import { BgCircleMask } from './backgrounds/BgCircleMask'
+import { BgSquareMask } from './backgrounds/BgSquareMask'
+import { BgSquircleMask } from './backgrounds/BgSquircleMask'
+
+export const bgShapeMap = {
+  circle: { Shape: BgCircle, Mask: BgCircleMask },
+  square: { Shape: BgSquare, Mask: BgSquareMask },
+  squircle: { Shape: BgSquircle, Mask: BgSquircleMask },
+}
+
 export const eyesMap = {
   normal: NormalEyes,
   leftTwitch: LeftTwitchEyes,
@@ -217,12 +230,13 @@ export interface AvatarProps {
 
   hairColor?: keyof typeof colors.hair
   clothingColor?: keyof typeof colors.clothing
-  circleColor?: keyof typeof colors.bgColors
+  bgColor?: keyof typeof colors.bgColors
+  bgShape?: keyof typeof bgShapeMap
   lipColor?: keyof typeof colors.lipColors
   hatColor?: keyof typeof colors.clothing
   faceMaskColor?: keyof typeof colors.clothing
 
-  mask?: boolean
+  showBackground?: boolean
   faceMask?: boolean
   lashes?: boolean
 }
@@ -244,12 +258,13 @@ export const Avatar = React.forwardRef<SVGSVGElement, AvatarProps>(
 
       hairColor = selectRandomKey(colors.hair),
       clothingColor = selectRandomKey(colors.clothing),
-      circleColor = selectRandomKey(colors.bgColors),
+      bgColor = selectRandomKey(colors.bgColors),
+      bgShape = selectRandomKey(bgShapeMap),
       lipColor = selectRandomKey(colors.lipColors),
       hatColor = selectRandomKey(colors.clothing),
       faceMaskColor = selectRandomKey(colors.clothing),
 
-      mask = true,
+      showBackground = true,
       faceMask = false,
       lashes = Math.random() > 0.5,
 
@@ -269,6 +284,7 @@ export const Avatar = React.forwardRef<SVGSVGElement, AvatarProps>(
     const Graphic = graphicsMap[graphic]
     const Hat = hatMap[hat]
     const Body = bodyMap[body]
+    const BgShape = bgShapeMap[bgShape]
 
     return (
       <ThemeContext.Provider value={{ colors, skin }}>
@@ -287,9 +303,10 @@ export const Avatar = React.forwardRef<SVGSVGElement, AvatarProps>(
           hatColor={hatColor}
           hairColor={hairColor}
           clothingColor={clothingColor}
-          circleColor={circleColor}
+          bgShape={BgShape}
+          bgColor={bgColor}
           lipColor={lipColor}
-          mask={mask}
+          showBackground={showBackground}
           faceMask={faceMask}
           faceMaskColor={faceMaskColor}
           lashes={lashes}

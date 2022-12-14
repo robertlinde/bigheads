@@ -20,7 +20,7 @@ const Example = () => (
   <BigHead
     accessory="shades"
     body="chest"
-    circleColor="blue"
+    bgColor="blue"
     clothing="tankTop"
     clothingColor="black"
     eyebrows="angry"
@@ -33,8 +33,8 @@ const Example = () => (
     hatColor="green"
     lashes="false"
     lipColor="purple"
-    mask="true"
-    faceMask="true"
+    showBackground={true}
+    faceMask={true}
     mouth="open"
     skinTone="brown"
   />
@@ -45,7 +45,8 @@ const Example = () => (
 
 - [`accessory`](#accessory)
 - [`body`](#body)
-- [`circleColor`](#circlecolor)
+- [`bgColor`](#bgcolor)
+- [`bgShape`](#bgshape)
 - [`clothing`](#clothing)
 - [`clothingColor`](#clothingcolor)
 - [`eyebrows`](#eyebrows)
@@ -84,6 +85,16 @@ The color of the background
 | Type     | Required | Default |
 | -------- | -------- | ------- |
 | enum('blue', 'green', 'red', 'none', 'transparent') | No       | Random |
+
+---
+
+### `bgShape`
+
+The shape of the background
+
+| Type     | Required | Default |
+| -------- | -------- | ------- |
+| enum('circle', 'square', 'squircle') | No       | Random |
 
 ---
 
@@ -235,7 +246,7 @@ The color of the skin
 | -------- | -------- | ------- |
 | enum('light', 'yellow', 'brown', 'dark', 'red', 'black') | No       | Random |
 
-### `mask`
+### `showBackground`
 
 If set to true it displays the avatar in a circle and cuts off everything below it. If set to false, it won't display the circle, and won't clip off any of the avatar.
 

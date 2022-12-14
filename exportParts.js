@@ -35,11 +35,11 @@ const allMaps = {
 const skinTone = theme.colors.skin.light
 const hairColor = 'blonde'
 const clothingColor = 'blue'
-const circleColor = 'blue'
+const bgColor = 'blue'
 const lipColor = 'red'
 const hatColor = 'blue'
 
-// const mask = true
+// const showBackground = true
 // const lashes = rng() > 0.5
 
 async function renderPart(Part, mapKey, key) {
@@ -60,7 +60,7 @@ async function renderPart(Part, mapKey, key) {
             skinTone,
             hairColor,
             clothingColor,
-            circleColor,
+            bgColor,
             lipColor,
             hatColor,
           }),

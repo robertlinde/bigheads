@@ -5,14 +5,13 @@ import { Noop } from '../utils/Noop'
 import { FacialHairProps } from './facialHair/types'
 import { HairProps } from './hair/types'
 import { ClothingProps } from './clothing/types'
-import { Mask } from './Mask'
-import { BgCircle } from './BgCircle'
 import { MouthProps } from './mouths/types'
 import { BodyProps } from './bodies/types'
 import { HatProps } from './hats/types'
 import { EyeProps } from './eyes/types'
 import { DressShirt } from './clothing/DressShirt'
 import { FaceMask } from './FaceMask'
+import { BgShapeProps, BgMaskProps } from './backgrounds/types'
 
 interface BaseProps {
   eyes: React.ComponentType<EyeProps>
@@ -43,12 +42,16 @@ interface BaseProps {
 
   clothingColor: keyof typeof colors.clothing
   hairColor: keyof typeof colors.hair
-  circleColor: keyof typeof colors.bgColors
+  bgShape: {
+    Shape: React.ComponentType<BgShapeProps>
+    Mask: React.ComponentType<BgMaskProps>
+  }
+  bgColor: keyof typeof colors.bgColors
   lipColor: keyof typeof colors.lipColors
   hatColor: keyof typeof colors.clothing
   faceMaskColor: keyof typeof colors.clothing
 
-  mask: boolean
+  showBackground: boolean
   faceMask: boolean
   lashes: boolean
 }
@@ -69,12 +72,13 @@ export const Base = React.forwardRef<SVGSVGElement, BaseProps>(
 
       hairColor,
       clothingColor,
-      circleColor,
+      bgShape = { Shape: Noop, Mask: Noop },
+      bgColor,
       lipColor,
       hatColor,
       faceMaskColor,
 
-      mask,
+      showBackground,
       faceMask,
       lashes,
 
@@ -87,6 +91,7 @@ export const Base = React.forwardRef<SVGSVGElement, BaseProps>(
     const { Front: FrontHair, Back: BackHair, hatScale } = hair
     const { Front: FrontHat, Back: BackHat } = hat
     const { Front: FrontBody, Back: BackBody, hasBreasts } = body
+    const { Shape: BgShape, Mask: BgMask } = bgShape
     const {
       Front: ClothingFront,
       Back: ClothingBack,
@@ -100,9 +105,9 @@ export const Base = React.forwardRef<SVGSVGElement, BaseProps>(
         viewBox="0 0 1000 990"
         {...rest}
       >
-        {mask && <Mask id="mask" />}
-        <g mask={mask ? `url(#mask)` : undefined}>
-          {mask && <BgCircle circleColor={circleColor} />}
+        {showBackground && <BgMask id="mask" />}
+        <g mask={showBackground ? `url(#mask)` : undefined}>
+          {showBackground && <BgShape bgColor={bgColor} />}
           <BackHat color={hatColor} scale={hatScale} />
           <BackHair hairColor={hairColor} hasHat={FrontHat !== Noop} />
           <path

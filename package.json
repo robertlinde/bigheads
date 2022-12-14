@@ -20,11 +20,6 @@
   "peerDependencies": {
     "react": ">=16"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
-  },
   "name": "@bigheads/core",
   "author": "Robert Broersma",
   "module": "dist/core.esm.js",
