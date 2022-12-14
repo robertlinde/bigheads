@@ -80,7 +80,7 @@ import { options } from 'dist/index'
 
 If set to true it displays the avatar in a circle and cuts off everything below it. If set to false, it won't display the circle, and won't clip off any of the avatar.
 
-| Type     | Required | Default |
+| Values   | Required | Default |
 | -------- | -------- | ------- |
 | true, false  | No       | Random  |
 
@@ -90,7 +90,7 @@ If set to true it displays the avatar in a circle and cuts off everything below 
 
 The color of the background
 
-| Type     | Required | Default |
+| Values   | Required | Default |
 | -------- | -------- | ------- |
 | 'blue', 'green', 'red', 'none', 'transparent' | No       | Random |
 
@@ -100,7 +100,7 @@ The color of the background
 
 The shape of the background
 
-| Type     | Required | Default |
+| Values   | Required | Default |
 | -------- | -------- | ------- |
 | 'circle', 'square', 'squircle' | No       | Random |
 
@@ -110,7 +110,7 @@ The shape of the background
 
 Type of accessory
 
-| Type     | Required | Default |
+| Values   | Required | Default |
 | -------- | -------- | ------- |
 | 'none', 'roundGlasses', 'tinyGlasses', 'shades', 'hoopEarrings' | No       | Random |
 
@@ -120,7 +120,7 @@ Type of accessory
 
 Type of body
 
-| Type     | Required | Default |
+| Values   | Required | Default |
 | -------- | -------- | ------- |
 | 'chest', 'breasts' | No | Random |
 
@@ -130,7 +130,7 @@ Type of body
 
 Type of cloth
 
-| Type     | Required | Default |
+| Values   | Required | Default |
 | -------- | -------- | ------- |
 | 'naked', 'shirt', 'dressShirt', 'vneck', 'tankTop', 'dress', 'denimJacket', 'hoodie', 'chequeredShirt', 'chequeredShirtDark' | No       | Random |
 
@@ -140,7 +140,7 @@ Type of cloth
 
 The color of the clothes
 
-| Type     | Required | Default |
+| Values   | Required | Default |
 | -------- | -------- | ------- |
 | 'white', 'blue', 'black', 'green', 'red' | No       | Random |
 
@@ -150,7 +150,7 @@ The color of the clothes
 
 Type of eyebrows
 
-| Type     | Required | Default |
+| Values   | Required | Default |
 | -------- | -------- | ------- |
 | 'raised', 'leftLowered', 'serious', 'angry', 'concerned' | No       | Random |
 
@@ -160,7 +160,7 @@ Type of eyebrows
 
 Type of eyes
 
-| Type     | Required | Default |
+| Values   | Required | Default |
 | -------- | -------- | ------- |
 | 'normal', 'leftTwitch', 'happy', 'content', 'squint', 'simple', 'dizzy', 'wink', 'heart', 'crazy', 'cute', 'dollars', 'stars', 'cyborg', 'simplePatch', 'piratePatch' | No       | Random |
 
@@ -170,7 +170,7 @@ Type of eyes
 
 Type of facial hair
 
-| Type     | Required | Default |
+| Values   | Required | Default |
 | -------- | -------- | ------- |
 | 'none', 'stubble', 'mediumBeard', 'goatee' | No       | Random |
 
@@ -180,7 +180,7 @@ Type of facial hair
 
 Type of graphic over the t-shirts
 
-| Type     | Required | Default |
+| Values   | Required | Default |
 | -------- | -------- | ------- |
 | 'none', 'redwood', 'gatsby', 'vue', 'react', 'graphQL', 'donut', 'rainbow' | No       | Random |
 
@@ -190,7 +190,7 @@ Type of graphic over the t-shirts
 
 Type of hair
 
-| Type     | Required | Default |
+| Values   | Required | Default |
 | -------- | -------- | ------- |
 | 'none', 'long', 'bun', 'short', 'pixie', 'balding', 'buzz', 'afro', 'bob', 'mohawk' | No       | Random |
 
@@ -200,7 +200,7 @@ Type of hair
 
 The color of the hair
 
-| Type     | Required | Default |
+| Values   | Required | Default |
 | -------- | -------- | ------- |
 | 'blonde', 'orange', 'black', 'white', 'brown', 'blue', 'pink' | No       | Random |
 
@@ -210,7 +210,7 @@ The color of the hair
 
 Type of hat
 
-| Type     | Required | Default |
+| Values   | Required | Default |
 | -------- | -------- | ------- |
 | 'none', 'beanie', 'turban', 'party', 'hijab' | No       | Random |
 
@@ -220,7 +220,7 @@ Type of hat
 
 The color of the hat
 
-| Type     | Required | Default |
+| Values   | Required | Default |
 | -------- | -------- | ------- |
 | 'white', 'blue', 'black', 'green', 'red' | No       | Random |
 
@@ -230,7 +230,7 @@ The color of the hat
 
 Show lashes
 
-| Type     | Required | Default |
+| Values   | Required | Default |
 | -------- | -------- | ------- |
 | true, false  | No       | Random  |
 
@@ -240,7 +240,7 @@ Show lashes
 
 The color of the lips
 
-| Type     | Required | Default |
+| Values   | Required | Default |
 | -------- | -------- | ------- |
 | 'red', 'purple', 'pink', 'turqoise', 'green' | No       | Random |
 
@@ -250,7 +250,7 @@ The color of the lips
 
 Type of mouth
 
-| Type     | Required | Default |
+| Values   | Required | Default |
 | -------- | -------- | ------- |
 | 'grin', 'sad', 'openSmile', 'lips', 'open', 'serious', 'tongue', 'piercedTongue', 'vomitingRainbow' | No       | Random |
 
@@ -260,7 +260,7 @@ Type of mouth
 
 The color of the skin
 
-| Type     | Required | Default |
+| Values   | Required | Default |
 | -------- | -------- | ------- |
 | 'light', 'yellow', 'brown', 'dark', 'red', 'black' | No       | Random |
 
@@ -270,7 +270,7 @@ The color of the skin
 
 If set to true the avatar will be wearing a face mask
 
-| Type     | Required | Default |
+| Values   | Required | Default |
 | -------- | -------- | ------- |
 | true, false  | No       | Random  |
 
@@ -280,7 +280,7 @@ If set to true the avatar will be wearing a face mask
 
 The color of the face mask
 
-| Type     | Required | Default |
+| Values   | Required | Default |
 | -------- | -------- | ------- |
 | 'white', 'blue', 'black', 'green', 'red' | No       | Random |
 
