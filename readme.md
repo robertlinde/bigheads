@@ -23,7 +23,6 @@ const Example = () => (
     bgColor="blue"
     clothing="tankTop"
     bgShape='square'
-    bgColor="black"
     eyebrows="angry"
     eyes="wink"
     facialHair="mediumBeard"
