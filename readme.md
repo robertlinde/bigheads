@@ -292,4 +292,4 @@ The color of the face mask
 * [Robert Linde](https://github.com/robertlinde)
 # License
 
-This project is licensed under the MIT License
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/robertlinde/bigheads/blob/main/LICENSE) file for details
