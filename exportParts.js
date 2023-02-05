@@ -35,7 +35,7 @@ const allMaps = {
 const skinTone = theme.colors.skin.light
 const hairColor = 'blonde'
 const clothingColor = 'blue'
-const bgColor = 'blue'
+const backgroundColor = 'blue'
 const lipColor = 'red'
 const hatColor = 'blue'
 
@@ -60,7 +60,7 @@ async function renderPart(Part, mapKey, key) {
             skinTone,
             hairColor,
             clothingColor,
-            bgColor,
+            backgroundColor,
             lipColor,
             hatColor,
           }),

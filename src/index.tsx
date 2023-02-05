@@ -10,13 +10,13 @@ export { Noop } from './utils/Noop'
 
 const options = {
     'showBackground': [true, false],
-    'bgColor': ['blue', 'green', 'red', 'none'],
-    'bgShape': ['circle', 'square', 'squircle'],
+    'backgroundColor': ['blue', 'green', 'red', 'none'],
+    'backgroundShape': ['circle', 'square', 'squircle'],
     'accessory': ['none', 'roundGlasses', 'tinyGlasses', 'shades', 'hoopEarrings'],
     'body': ['chest', 'breasts'],
     'clothing': ['naked', 'shirt', 'dressShirt', 'vneck', 'tankTop', 'dress', 'denimJacket', 'hoodie', 'chequeredShirt', 'chequeredShirtDark'],
     'clothingColor': ['white', 'blue', 'black', 'green', 'red'],
-    'eyebrows': ['raised', 'leftLowered', 'serious', 'angry', 'concerned'],
+    'eyebrows': ['raised', 'leftLowered', 'serious', 'angry', 'concerned', 'none'],
     'eyes': ['normal', 'leftTwitch', 'happy', 'content', 'squint', 'simple', 'dizzy', 'wink', 'heart', 'crazy', 'cute', 'dollars', 'stars', 'cyborg', 'simplePatch', 'piratePatch'],
     'facialHair': ['none', 'stubble', 'mediumBeard', 'goatee'],
     'graphic': ['none', 'redwood', 'gatsby', 'vue', 'react', 'graphQL', 'donut', 'rainbow'],

@@ -91,7 +91,7 @@ import { BgCircleMask } from './backgrounds/BgCircleMask'
 import { BgSquareMask } from './backgrounds/BgSquareMask'
 import { BgSquircleMask } from './backgrounds/BgSquircleMask'
 
-export const bgShapeMap = {
+export const backgroundShapeMap = {
   circle: { Shape: BgCircle, Mask: BgCircleMask },
   square: { Shape: BgSquare, Mask: BgSquareMask },
   squircle: { Shape: BgSquircle, Mask: BgSquircleMask },
@@ -122,6 +122,7 @@ export const eyebrowsMap = {
   serious: SeriousEyebrows,
   angry: AngryEyebrows,
   concerned: ConcernedEyebrows,
+  none: Noop
 }
 
 export const mouthsMap = {
@@ -222,8 +223,8 @@ export interface AvatarProps {
 
   hairColor?: keyof typeof colors.hair
   clothingColor?: keyof typeof colors.clothing
-  bgColor?: keyof typeof colors.bgColors
-  bgShape?: keyof typeof bgShapeMap
+  backgroundColor?: keyof typeof colors.backgroundColors
+  backgroundShape?: keyof typeof backgroundShapeMap
   lipColor?: keyof typeof colors.lipColors
   hatColor?: keyof typeof colors.clothing
   faceMaskColor?: keyof typeof colors.clothing
@@ -250,8 +251,8 @@ export const Avatar = React.forwardRef<SVGSVGElement, AvatarProps>(
 
       hairColor = selectRandomKey(colors.hair),
       clothingColor = selectRandomKey(colors.clothing),
-      bgColor = selectRandomKey(colors.bgColors),
-      bgShape = selectRandomKey(bgShapeMap),
+      backgroundColor = selectRandomKey(colors.backgroundColors),
+      backgroundShape = selectRandomKey(backgroundShapeMap),
       lipColor = selectRandomKey(colors.lipColors),
       hatColor = selectRandomKey(colors.clothing),
       faceMaskColor = selectRandomKey(colors.clothing),
@@ -276,7 +277,7 @@ export const Avatar = React.forwardRef<SVGSVGElement, AvatarProps>(
     const Graphic = graphicsMap[graphic]
     const Hat = hatMap[hat]
     const Body = bodyMap[body]
-    const BgShape = bgShapeMap[bgShape]
+    const BackgroundShape = backgroundShapeMap[backgroundShape]
 
     return (
       <ThemeContext.Provider value={{ colors, skin }}>
@@ -295,8 +296,8 @@ export const Avatar = React.forwardRef<SVGSVGElement, AvatarProps>(
           hatColor={hatColor}
           hairColor={hairColor}
           clothingColor={clothingColor}
-          bgShape={BgShape}
-          bgColor={bgColor}
+          backgroundShape={BackgroundShape}
+          backgroundColor={backgroundColor}
           lipColor={lipColor}
           showBackground={showBackground}
           faceMask={faceMask}

@@ -19,8 +19,8 @@ import { BigHead } from 'dist/index'
 const Example = () => (
   <BigHead
     showBackground={true}
-    bgColor="blue"
-    bgShape='square'
+    backgroundColor="blue"
+    backgroundShape='square'
     accessory="shades"
     body="chest"
     clothing="tankTop"
@@ -52,8 +52,8 @@ import { options } from 'dist/index'
 ### Props
 
 * [`showBackground`](#showBackground)
-* [`bgColor`](#bgcolor)
-* [`bgShape`](#bgshape)
+* [`backgroundColor`](#backgroundColor)
+* [`backgroundShape`](#backgroundShape)
 * [`accessory`](#accessory)
 * [`body`](#body)
 * [`clothing`](#clothing)
@@ -86,7 +86,7 @@ If set to true it displays the avatar in a circle and cuts off everything below 
 
 ---
 
-### `bgColor`
+### `backgroundColor`
 
 The color of the background
 
@@ -96,7 +96,7 @@ The color of the background
 
 ---
 
-### `bgShape`
+### `backgroundShape`
 
 The shape of the background
 
@@ -152,7 +152,7 @@ Type of eyebrows
 
 | Values   | Required | Default |
 | -------- | -------- | ------- |
-| 'raised', 'leftLowered', 'serious', 'angry', 'concerned' | No       | Random |
+| 'raised', 'leftLowered', 'serious', 'angry', 'concerned', 'none' | No       | Random |
 
 ---
 

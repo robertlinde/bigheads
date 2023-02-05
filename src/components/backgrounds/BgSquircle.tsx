@@ -1,11 +1,11 @@
 import React from 'react'
 import { useTheme } from '../../themeContext'
-import { BgShapeProps } from './types'
+import { BackgroundShapeProps } from './types'
 
-export const BgSquircle = ({ bgColor }: BgShapeProps) => {
+export const BgSquircle = ({ backgroundColor }: BackgroundShapeProps) => {
   const { colors } = useTheme()
 
-  const color = colors.bgColors[bgColor]
+  const color = colors.backgroundColors[backgroundColor]
 
   return (
     <path

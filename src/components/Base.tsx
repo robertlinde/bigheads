@@ -11,7 +11,7 @@ import { HatProps } from './hats/types'
 import { EyeProps } from './eyes/types'
 import { DressShirt } from './clothing/DressShirt'
 import { FaceMask } from './faceMask/FaceMask'
-import { BgShapeProps, BgMaskProps } from './backgrounds/types'
+import { BackgroundShapeProps, BgMaskProps } from './backgrounds/types'
 
 interface BaseProps {
   eyes: React.ComponentType<EyeProps>
@@ -42,11 +42,11 @@ interface BaseProps {
 
   clothingColor: keyof typeof colors.clothing
   hairColor: keyof typeof colors.hair
-  bgShape: {
-    Shape: React.ComponentType<BgShapeProps>
+  backgroundShape: {
+    Shape: React.ComponentType<BackgroundShapeProps>
     Mask: React.ComponentType<BgMaskProps>
   }
-  bgColor: keyof typeof colors.bgColors
+  backgroundColor: keyof typeof colors.backgroundColors
   lipColor: keyof typeof colors.lipColors
   hatColor: keyof typeof colors.clothing
   faceMaskColor: keyof typeof colors.clothing
@@ -72,8 +72,8 @@ export const Base = React.forwardRef<SVGSVGElement, BaseProps>(
 
       hairColor,
       clothingColor,
-      bgShape = { Shape: Noop, Mask: Noop },
-      bgColor,
+      backgroundShape = { Shape: Noop, Mask: Noop },
+      backgroundColor,
       lipColor,
       hatColor,
       faceMaskColor,
@@ -91,7 +91,7 @@ export const Base = React.forwardRef<SVGSVGElement, BaseProps>(
     const { Front: FrontHair, Back: BackHair, hatScale } = hair
     const { Front: FrontHat, Back: BackHat } = hat
     const { Front: FrontBody, Back: BackBody, hasBreasts } = body
-    const { Shape: BgShape, Mask: BgMask } = bgShape
+    const { Shape: BackgroundShape, Mask: BgMask } = backgroundShape
     const {
       Front: ClothingFront,
       Back: ClothingBack,
@@ -107,7 +107,7 @@ export const Base = React.forwardRef<SVGSVGElement, BaseProps>(
       >
         {showBackground && <BgMask id="mask" />}
         <g mask={showBackground ? `url(#mask)` : undefined}>
-          {showBackground && <BgShape bgColor={bgColor} />}
+          {showBackground && <BackgroundShape backgroundColor={backgroundColor} />}
           <BackHat color={hatColor} scale={hatScale} />
           <BackHair hairColor={hairColor} hasHat={FrontHat !== Noop} />
           <path

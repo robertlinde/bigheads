@@ -99,7 +99,7 @@ export const colors = {
       shadow: '#C46565',
     },
   },
-  bgColors: {
+  backgroundColors: {
     blue: '#85c5e5',
     green: '#89D86F',
     red: '#ED9191',
