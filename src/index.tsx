@@ -10,7 +10,7 @@ export { Noop } from './utils/Noop'
 
 const options = {
     'showBackground': [true, false],
-    'bgColor': ['blue', 'green', 'red', 'none', 'transparent'],
+    'bgColor': ['blue', 'green', 'red', 'none'],
     'bgShape': ['circle', 'square', 'squircle'],
     'accessory': ['none', 'roundGlasses', 'tinyGlasses', 'shades', 'hoopEarrings'],
     'body': ['chest', 'breasts'],

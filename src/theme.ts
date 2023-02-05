@@ -103,7 +103,6 @@ export const colors = {
     blue: '#85c5e5',
     green: '#89D86F',
     red: '#ED9191',
-    transparent: 'rgba(0,0,0,0)',
     none: 'rgba(0,0,0,0)'
   },
   outline: '#592d3d',

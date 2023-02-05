@@ -92,7 +92,7 @@ The color of the background
 
 | Values   | Required | Default |
 | -------- | -------- | ------- |
-| 'blue', 'green', 'red', 'none', 'transparent' | No       | Random |
+| 'blue', 'green', 'red', 'none' | No       | Random |
 
 ---
 
