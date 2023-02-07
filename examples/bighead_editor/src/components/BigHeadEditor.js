@@ -20,22 +20,24 @@ function BigHeadEditor() {
   }
 
   const settingsReducer = (settings, action) => {
-    let currentIndex = options[action.key].indexOf(settings[action.key])
-    switch (action.type) {
+    const {type, key} = action
+    let currentIndex = options[key].indexOf(settings[key])
+
+    switch (type) {
       case ACTIONS.NEXT:
         return {
           ...settings,
-          [action.key]: currentIndex == options[action.key].length - 1 ? options[action.key][0] : options[action.key][currentIndex + 1]
+          [key]: currentIndex === options[key].length - 1 ? options[key][0] : options[key][currentIndex + 1]
         };
       case ACTIONS.PREVIOUS:
         return {
           ...settings,
-          [action.key]: currentIndex == 0 ? options[action.key][options[action.key].length - 1] : options[action.key][currentIndex - 1]
+          [key]: currentIndex === 0 ? options[key][options[key].length - 1] : options[key][currentIndex - 1]
         };
       case ACTIONS.RANDOM:
         return {
           ...settings,
-          [action.key]: options[action.key][Math.floor(Math.random() * options[action.key].length)]
+          [key]: options[key][Math.floor(Math.random() * options[key].length)]
         }
       default:
         throw new Error()
@@ -49,19 +51,20 @@ function BigHeadEditor() {
     PREVIOUS: 'previous'
   }
 
-  const changeSettingsReducer = (changeSettings, action) => {
+  const activeReducer = (settings, action) => {
+    const {type, key} = action
     const optionsKeys = Array.from(Object.keys(options))
-    switch (action.type) {
+    switch (type) {
       case CHANGE_ACTIONS.NEXT:
-        return optionsKeys[optionsKeys.indexOf(action.key) + 1] || optionsKeys[0]
+        return optionsKeys[optionsKeys.indexOf(key) + 1] || optionsKeys[0]
       case CHANGE_ACTIONS.PREVIOUS:
-        return optionsKeys[optionsKeys.indexOf(action.key) - 1] || optionsKeys[optionsKeys.length - 1]
+        return optionsKeys[optionsKeys.indexOf(key) - 1] || optionsKeys[optionsKeys.length - 1]
       default:
         throw new Error()
     }
   }
 
-  const [currentSetting, dispatchChangeSetting] = useReducer(changeSettingsReducer, Array.from(Object.keys(options))[0])
+  const [active, keydispatchActive] = useReducer(activeReducer, Array.from(Object.keys(options))[0])
 
   const namingsForDisplay = (word) => (word.charAt(0).toUpperCase() + word.slice(1)).split(/(?=[A-Z])/).join(" ")
 
@@ -71,18 +74,18 @@ function BigHeadEditor() {
 
       <div className='w-full sm:w-4/5 md:w-3/5 max-w-3xl bg-slate-700 p-4 rounded-lg mt-10 flex flex-col items-center justify-center gap-10'>
         <div className='w-full flex gap-4 justify-between items-center'>
-          <button onClick={() => dispatchChangeSetting({
+          <button onClick={() => keydispatchActive({
             type: CHANGE_ACTIONS.PREVIOUS,
-            key: currentSetting
+            key: active
           })}>
             <ChevronLeftIcon className='w-8 h-8'></ChevronLeftIcon>
           </button>
           <h2 className='text-3xl'>
-            {namingsForDisplay(currentSetting)}
+            {namingsForDisplay(active)}
           </h2>
-          <button onClick={() => dispatchChangeSetting({
+          <button onClick={() => keydispatchActive({
             type: CHANGE_ACTIONS.NEXT,
-            key: currentSetting
+            key: active
           })}>
             <ChevronRightIcon className='w-8 h-8'></ChevronRightIcon>
           </button>
@@ -90,14 +93,14 @@ function BigHeadEditor() {
         <div className='flex gap-2 w-full justify-between items-center text-xl'>
           <button onClick={() => dispatchSetting({
             type: ACTIONS.PREVIOUS,
-            key: currentSetting
+            key: active
           })}>
             <ChevronLeftIcon className='h-8 w-8'></ChevronLeftIcon>
           </button>
-          <p>{typeof settings[currentSetting] == 'boolean' ? (settings[currentSetting] == true ? 'Yes' : 'No') : namingsForDisplay(settings[currentSetting])}</p>
+          <p>{typeof settings[active] === 'boolean' ? (settings[active] ? 'Yes' : 'No') : namingsForDisplay(settings[active])}</p>
           <button onClick={() => dispatchSetting({
             type: ACTIONS.NEXT,
-            key: currentSetting
+            key: active
           })}>
             <ChevronRightIcon className='h-8 w-8'></ChevronRightIcon>
           </button>
