@@ -3,6 +3,7 @@ import { BigHead, options } from './../dist/index'
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline'
 
 function BigHeadEditor() {
+
   const createSettingsInitialState = () => {
     let settings = {}
     for (let key in options) {
@@ -11,8 +12,6 @@ function BigHeadEditor() {
     return settings
   }
 
-  createSettingsInitialState()
-
   const ACTIONS = {
     NEXT: 'next',
     PREVIOUS: 'previous',
@@ -20,7 +19,7 @@ function BigHeadEditor() {
   }
 
   const settingsReducer = (settings, action) => {
-    const {type, key} = action
+    const { type, key } = action
     let currentIndex = options[key].indexOf(settings[key])
 
     switch (type) {
@@ -46,25 +45,20 @@ function BigHeadEditor() {
 
   const [settings, dispatchSetting] = useReducer(settingsReducer, createSettingsInitialState())
 
-  const CHANGE_ACTIONS = {
-    NEXT: 'next',
-    PREVIOUS: 'previous'
-  }
-
-  const activeReducer = (settings, action) => {
-    const {type, key} = action
+  const activeReducer = (active, action) => {
+    const { type, key } = action
     const optionsKeys = Array.from(Object.keys(options))
     switch (type) {
-      case CHANGE_ACTIONS.NEXT:
+      case ACTIONS.NEXT:
         return optionsKeys[optionsKeys.indexOf(key) + 1] || optionsKeys[0]
-      case CHANGE_ACTIONS.PREVIOUS:
+      case ACTIONS.PREVIOUS:
         return optionsKeys[optionsKeys.indexOf(key) - 1] || optionsKeys[optionsKeys.length - 1]
       default:
         throw new Error()
     }
   }
 
-  const [active, keydispatchActive] = useReducer(activeReducer, Array.from(Object.keys(options))[0])
+  const [active, dispatchActive] = useReducer(activeReducer, Array.from(Object.keys(options))[0])
 
   const namingsForDisplay = (word) => (word.charAt(0).toUpperCase() + word.slice(1)).split(/(?=[A-Z])/).join(" ")
 
@@ -74,8 +68,8 @@ function BigHeadEditor() {
 
       <div className='w-full sm:w-4/5 md:w-3/5 max-w-3xl bg-slate-700 p-4 rounded-lg mt-10 flex flex-col items-center justify-center gap-10'>
         <div className='w-full flex gap-4 justify-between items-center'>
-          <button onClick={() => keydispatchActive({
-            type: CHANGE_ACTIONS.PREVIOUS,
+          <button onClick={() => dispatchActive({
+            type: ACTIONS.PREVIOUS,
             key: active
           })}>
             <ChevronLeftIcon className='w-8 h-8'></ChevronLeftIcon>
@@ -83,8 +77,8 @@ function BigHeadEditor() {
           <h2 className='text-3xl'>
             {namingsForDisplay(active)}
           </h2>
-          <button onClick={() => keydispatchActive({
-            type: CHANGE_ACTIONS.NEXT,
+          <button onClick={() => dispatchActive({
+            type: ACTIONS.NEXT,
             key: active
           })}>
             <ChevronRightIcon className='w-8 h-8'></ChevronRightIcon>
