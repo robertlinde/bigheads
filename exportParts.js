@@ -16,6 +16,7 @@ const {
   hatMap,
   bodyMap,
   ThemeContext,
+  backgroundShapeMap,
   Noop,
 } = require('./dist')
 
@@ -30,6 +31,7 @@ const allMaps = {
   graphicsMap,
   hatMap,
   bodyMap,
+  backgroundShapeMap
 }
 
 const skinTone = theme.colors.skin.light
