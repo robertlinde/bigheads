@@ -55,7 +55,7 @@ import { options } from 'dist/index'
 Leaving a prop empty will result in a random value being chosen.
 | Property           | Possible values            |
 | ------------------ | -------------------------- |
-| showBackground     | `'true'` , `'false'` |
+| showBackground     | `true` , `false` |
 | backgroundColor    | `'red'` , `'orange'` , `'yellow'` , `'green'` , `'turqoise'` , `'blue'` , `'pink'` , `'purple'` |
 | backgroundShape    | `'none'` , `'circle'` , `'square'` , `'squircle'` |
 | accessory          | `'none'` , `'faceMask'` , `'hoopEarrings'` , `'roundGlasses'` , `'shades'` , `'tinyGlasses'` |
@@ -71,11 +71,11 @@ Leaving a prop empty will result in a random value being chosen.
 | hairColor          | `'white'` , `'silver'` , `'blonde'` , `'brown'` , `'black'` , `'red'` , `'lightRed'` , `'orange'` , `'lightOrange'` , `'green'` , `'lightGreen'` , `'turqoise'` , `'lightTurqoise'` , `'blue'` , `'lightBlue'` , `'pink'` , `'lightPink'` , `'purple'` , `'lighPurple'` |
 | hat                | `'none` ', `'beanie'` , `'hijab'` , `'partyHat'` , `'turban'` |
 | hatColor           | `'white'` , `'gray'` , `'black'` , `'red'` , `'lightRed'` , `'orange'` , `'lightOrange'` , `'yellow'` , `'lightYellow'` , `'green'` , `'lightGreen'` , `'turqoise'` , `'lightTurqoise'` , `'blue'` , `'lightBlue'` , `'pink'` , `'lightPink'` , `'purple'` , `'lighPurple'` |
-| lashes             | `'true'` , `'false'` |
+| lashes             | `true` , `false` |
 | lipColor           | `'red'` , `'lightRed'` , `'green'` , `'lightGreen'` , `'turqoise'` , `'lightTurqoise'` , `'blue'` , `'lightBlue'` , `'pink'` , `'lightPink'` , `'purple'` , `'lightPurple'` |
 | mouth              | `'grin'` , `'lips'` , `'open'` , `'openSmile'` , `'piercedTongue'` , `'sad'` , `'serious'` , `'tongue'` , `'vomitingRainbow'` |
 | skinTone           | `'light'` , `'yellow'` , `'brown'` , `'dark'` , `'red'` , `'black'` |
-| faceMask           | `'true'` , `'false'` |
+| faceMask           | `true` , `false` |
 | faceMaskColor      | `'white'` , `'gray'` , `'black'` , `'red'` , `'lightRed'` , `'orange'` , `'lightOrange'` , `'yellow'` , `'lightYellow'` , `'green'` , `'lightGreen'` , `'turqoise'` , `'lightTurqoise'` , `'blue'` , `'lightBlue'` , `'pink'` , `'lightPink'` , `'purple'` , `'lighPurple'` |
 
 ---
