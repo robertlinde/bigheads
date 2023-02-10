@@ -2,7 +2,7 @@
   <img alt="Big Heads Demo" src="demo.gif" />
 </p>
 
-### Try it
+## Try it
 
 ### Getting Started
 
@@ -28,6 +28,7 @@ const Example = () => (
     eyebrows="angry"
     eyes="wink"
     facialHair="mediumBeard"
+    facialHairColor="blonde"
     graphic="vue"
     hair="short"
     hairColor="black"
@@ -51,238 +52,31 @@ import { options } from 'dist/index'
 
 ### Props
 
-* [`showBackground`](#showBackground)
-* [`backgroundColor`](#backgroundColor)
-* [`backgroundShape`](#backgroundShape)
-* [`accessory`](#accessory)
-* [`body`](#body)
-* [`clothing`](#clothing)
-* [`clothingColor`](#clothingcolor)
-* [`eyebrows`](#eyebrows)
-* [`eyes`](#eyes)
-* [`facialHair`](#facialhair)
-* [`graphic`](#graphic)
-* [`hair`](#hair)
-* [`hairColor`](#haircolor)
-* [`hat`](#hat)
-* [`hatColor`](#hatcolor)
-* [`lashes`](#lashes)
-* [`lipColor`](#lipcolor)
-* [`mouth`](#mouth)
-* [`skinTone`](#skinTone)
-* [`faceMask`](#faceMask)
-* [`faceMaskColor`](#faceMaskColor)
-# Reference
-
-## Props
-
-### `showBackground`
-
-If set to true it displays the avatar in a circle and cuts off everything below it. If set to false, it won't display the circle, and won't clip off any of the avatar.
-
-| Values   | Required | Default |
-| -------- | -------- | ------- |
-| true, false  | No       | Random  |
-
----
-
-### `backgroundColor`
-
-The color of the background
-
-| Values   | Required | Default |
-| -------- | -------- | ------- |
-| 'blue', 'green', 'red', 'none' | No       | Random |
-
----
-
-### `backgroundShape`
-
-The shape of the background
-
-| Values   | Required | Default |
-| -------- | -------- | ------- |
-| 'circle', 'square', 'squircle' | No       | Random |
-
----
-
-### `accessory`
-
-Type of accessory
-
-| Values   | Required | Default |
-| -------- | -------- | ------- |
-| 'none', 'roundGlasses', 'tinyGlasses', 'shades', 'hoopEarrings' | No       | Random |
-
----
-
-### `body`
-
-Type of body
-
-| Values   | Required | Default |
-| -------- | -------- | ------- |
-| 'chest', 'breasts' | No | Random |
-
----
-
-### `clothing`
-
-Type of cloth
-
-| Values   | Required | Default |
-| -------- | -------- | ------- |
-| 'naked', 'shirt', 'dressShirt', 'vneck', 'tankTop', 'dress', 'denimJacket', 'hoodie', 'chequeredShirt', 'chequeredShirtDark' | No       | Random |
-
----
-
-### `clothingColor`
-
-The color of the clothes
-
-| Values   | Required | Default |
-| -------- | -------- | ------- |
-| 'white', 'blue', 'black', 'green', 'red' | No       | Random |
-
----
-
-### `eyebrows`
-
-Type of eyebrows
-
-| Values   | Required | Default |
-| -------- | -------- | ------- |
-| 'raised', 'leftLowered', 'serious', 'angry', 'concerned', 'none' | No       | Random |
-
----
-
-### `eyes`
-
-Type of eyes
-
-| Values   | Required | Default |
-| -------- | -------- | ------- |
-| 'normal', 'leftTwitch', 'happy', 'content', 'squint', 'simple', 'dizzy', 'wink', 'heart', 'crazy', 'cute', 'dollars', 'stars', 'cyborg', 'simplePatch', 'piratePatch' | No       | Random |
-
----
-
-### `facialHair`
-
-Type of facial hair
-
-| Values   | Required | Default |
-| -------- | -------- | ------- |
-| 'none', 'stubble', 'mediumBeard', 'goatee' | No       | Random |
-
----
-
-### `graphic`
-
-Type of graphic over the t-shirts
-
-| Values   | Required | Default |
-| -------- | -------- | ------- |
-| 'none', 'redwood', 'gatsby', 'vue', 'react', 'graphQL', 'donut', 'rainbow' | No       | Random |
-
----
-
-### `hair`
-
-Type of hair
-
-| Values   | Required | Default |
-| -------- | -------- | ------- |
-| 'none', 'long', 'bun', 'short', 'pixie', 'balding', 'buzz', 'afro', 'bob', 'mohawk' | No       | Random |
-
----
-
-### `hairColor`
-
-The color of the hair
-
-| Values   | Required | Default |
-| -------- | -------- | ------- |
-| 'blonde', 'orange', 'black', 'white', 'brown', 'blue', 'pink' | No       | Random |
-
-----
-
-### `hat`
-
-Type of hat
-
-| Values   | Required | Default |
-| -------- | -------- | ------- |
-| 'none', 'beanie', 'turban', 'party', 'hijab' | No       | Random |
-
----
-
-### `hatColor`
-
-The color of the hat
-
-| Values   | Required | Default |
-| -------- | -------- | ------- |
-| 'white', 'blue', 'black', 'green', 'red' | No       | Random |
-
----
-
-### `lashes`
-
-Show lashes
-
-| Values   | Required | Default |
-| -------- | -------- | ------- |
-| true, false  | No       | Random  |
-
----
-
-### `lipColor`
-
-The color of the lips
-
-| Values   | Required | Default |
-| -------- | -------- | ------- |
-| 'red', 'purple', 'pink', 'turqoise', 'green' | No       | Random |
-
----
-
-### `mouth`
-
-Type of mouth
-
-| Values   | Required | Default |
-| -------- | -------- | ------- |
-| 'grin', 'sad', 'openSmile', 'lips', 'open', 'serious', 'tongue', 'piercedTongue', 'vomitingRainbow' | No       | Random |
-
----
-
-### `skinTone`
-
-The color of the skin
-
-| Values   | Required | Default |
-| -------- | -------- | ------- |
-| 'light', 'yellow', 'brown', 'dark', 'red', 'black' | No       | Random |
-
----
-
-### `faceMask`
-
-If set to true the avatar will be wearing a face mask
-
-| Values   | Required | Default |
-| -------- | -------- | ------- |
-| true, false  | No       | Random  |
-
----
-
-### `faceMaskColor`
-
-The color of the face mask
-
-| Values   | Required | Default |
-| -------- | -------- | ------- |
-| 'white', 'blue', 'black', 'green', 'red' | No       | Random |
+Leaving a prop empty will result in a random value being chosen.
+| Property           | Possible values            |
+| ------------------ | -------------------------- |
+| showBackground     | `'true'` , `'false'` |
+| backgroundColor    | `'red'` , `'orange'` , `'yellow'` , `'green'` , `'turqoise'` , `'blue'` , `'pink'` , `'purple'` |
+| backgroundShape    | `'none'` , `'circle'` , `'square'` , `'squircle'` |
+| accessory          | `'none'` , `'faceMask'` , `'hoopEarrings'` , `'roundGlasses'` , `'shades'` , `'tinyGlasses'` |
+| body               | `'chest'` , `'breasts'` |
+| clothing           | `'naked'` , `'chequeredShirt'` , `'chequeredShirtDark'` , `'shirt'` , `'denimJacket'` , `'dressShirt'` , `'hoodie'` , `'vneck'` , `'tankTop'` , `'dress'` |
+| clothingColor      | `'white'` , `'gray'` , `'black'` , `'red'` , `'lightRed'` , `'orange'` , `'lightOrange'` , `'yellow'` , `'lightYellow'` , `'green'` , `'lightGreen'` , `'turqoise'` , `'lightTurqoise'` , `'blue'` , `'lightBlue'` , `'pink'` , `'lightPink'` , `'purple'` , `'lighPurple'` |
+| eyebrows           | `'none'` , `'angry'` , `'concerned'` , `'leftLowered'` , `'raised'` , `'serious'` |
+| eyes               | `'normal'` , `'content'` , `'crazy'` , `'cute'` , `'cyborg'` , `'dizzy'` , `'dollars'` , `'eyePatch'` , `'eyePatch2'` , `'happy'` , `'hearts'` , `'leftTwitch'` , `'squint'` , `'simple'` , `'stars'` , `'wink'` |
+| facialHair         | `'none'` , `'goatee'` , `'mediumBeard'` , `'stubble'` |
+| facialHairColor    | `'white'` , `'silver'` , `'blonde'` , `'brown'` , `'black'` , `'red'` , `'lightRed'` , `'orange'` , `'lightOrange'` , `'green'` , `'lightGreen'` , `'turqoise'` , `'lightTurqoise'` , `'blue'` , `'lightBlue'` , `'pink'` , `'lightPink'` , `'purple'` , `'lighPurple'` |
+| graphic            | `'none'` , `'donut'` , `'gatsby'` , `'graphQL'` , `'rainbow'` , `'react'` , `'redwood'` , `'vue'` |
+| hair               | `'none'` , `'afro'` , `'balding'` , `'bob'` , `'bun'` , `'buzz'` , `'long'` , `'mohawk'` , `'pixie'` , `'short'` |
+| hairColor          | `'white'` , `'silver'` , `'blonde'` , `'brown'` , `'black'` , `'red'` , `'lightRed'` , `'orange'` , `'lightOrange'` , `'green'` , `'lightGreen'` , `'turqoise'` , `'lightTurqoise'` , `'blue'` , `'lightBlue'` , `'pink'` , `'lightPink'` , `'purple'` , `'lighPurple'` |
+| hat                | `'none` ', `'beanie'` , `'hijab'` , `'partyHat'` , `'turban'` |
+| hatColor           | `'white'` , `'gray'` , `'black'` , `'red'` , `'lightRed'` , `'orange'` , `'lightOrange'` , `'yellow'` , `'lightYellow'` , `'green'` , `'lightGreen'` , `'turqoise'` , `'lightTurqoise'` , `'blue'` , `'lightBlue'` , `'pink'` , `'lightPink'` , `'purple'` , `'lighPurple'` |
+| lashes             | `'true'` , `'false'` |
+| lipColor           | `'red'` , `'lightRed'` , `'green'` , `'lightGreen'` , `'turqoise'` , `'lightTurqoise'` , `'blue'` , `'lightBlue'` , `'pink'` , `'lightPink'` , `'purple'` , `'lightPurple'` |
+| mouth              | `'grin'` , `'lips'` , `'open'` , `'openSmile'` , `'piercedTongue'` , `'sad'` , `'serious'` , `'tongue'` , `'vomitingRainbow'` |
+| skinTone           | `'light'` , `'yellow'` , `'brown'` , `'dark'` , `'red'` , `'black'` |
+| faceMask           | `'true'` , `'false'` |
+| faceMaskColor      | `'white'` , `'gray'` , `'black'` , `'red'` , `'lightRed'` , `'orange'` , `'lightOrange'` , `'yellow'` , `'lightYellow'` , `'green'` , `'lightGreen'` , `'turqoise'` , `'lightTurqoise'` , `'blue'` , `'lightBlue'` , `'pink'` , `'lightPink'` , `'purple'` , `'lighPurple'` |
 
 ---
 

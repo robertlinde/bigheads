@@ -36,6 +36,7 @@ const allMaps = {
 
 const skinTone = theme.colors.skin.light
 const hairColor = 'blonde'
+const facialHairColor = 'blonde'
 const clothingColor = 'blue'
 const backgroundColor = 'blue'
 const lipColor = 'red'
@@ -61,6 +62,7 @@ async function renderPart(Part, mapKey, key) {
           React.createElement(Part, {
             skinTone,
             hairColor,
+            facialHairColor,
             clothingColor,
             backgroundColor,
             lipColor,

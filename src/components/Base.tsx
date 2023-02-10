@@ -42,6 +42,7 @@ interface BaseProps {
 
   clothingColor: keyof typeof colors.clothing
   hairColor: keyof typeof colors.hair
+  facialHairColor: keyof typeof colors.hair
   backgroundShape: {
     Shape: React.ComponentType<BackgroundShapeProps>
     Mask: React.ComponentType<BgMaskProps>
@@ -71,6 +72,7 @@ export const Base = React.forwardRef<SVGSVGElement, BaseProps>(
       body,
 
       hairColor,
+      facialHairColor,
       clothingColor,
       backgroundShape = { Shape: Noop, Mask: Noop },
       backgroundColor,
@@ -204,7 +206,7 @@ export const Base = React.forwardRef<SVGSVGElement, BaseProps>(
             />
           )}
           <ClothingFront color={clothingColor} graphic={Graphic} hasBreasts={hasBreasts} />
-          {!faceMask && <FacialHair color={hairColor} />}
+          {!faceMask && <FacialHair color={facialHairColor} />}
           <Eyes withLashes={lashes} />
           <Mouth lipColor={lipColor} />
           {faceMask && <FaceMask color={faceMaskColor} />}

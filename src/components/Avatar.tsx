@@ -222,6 +222,7 @@ export interface AvatarProps {
   body?: keyof typeof bodyMap
 
   hairColor?: keyof typeof colors.hair
+  facialHairColor?: keyof typeof colors.hair
   clothingColor?: keyof typeof colors.clothing
   backgroundColor?: keyof typeof colors.backgroundColors
   backgroundShape?: keyof typeof backgroundShapeMap
@@ -250,6 +251,7 @@ export const Avatar = React.forwardRef<SVGSVGElement, AvatarProps>(
       body = selectRandomKey(bodyMap),
 
       hairColor = selectRandomKey(colors.hair),
+      facialHairColor = selectRandomKey(colors.hair),
       clothingColor = selectRandomKey(colors.clothing),
       backgroundColor = selectRandomKey(colors.backgroundColors),
       backgroundShape = selectRandomKey(backgroundShapeMap),
@@ -288,6 +290,7 @@ export const Avatar = React.forwardRef<SVGSVGElement, AvatarProps>(
           mouth={Mouth}
           hair={Hair}
           facialHair={FacialHair}
+          facialHairColor={facialHairColor}
           clothing={Clothing}
           accessory={Accessory}
           graphic={Graphic}

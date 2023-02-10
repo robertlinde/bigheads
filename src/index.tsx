@@ -19,6 +19,7 @@ const options = {
     'eyebrows': ['raised', 'leftLowered', 'serious', 'angry', 'concerned', 'none'],
     'eyes': ['normal', 'leftTwitch', 'happy', 'content', 'squint', 'simple', 'dizzy', 'wink', 'heart', 'crazy', 'cute', 'dollars', 'stars', 'cyborg', 'simplePatch', 'piratePatch'],
     'facialHair': ['none', 'stubble', 'mediumBeard', 'goatee'],
+    'facialHairColor': ['white', 'silver', 'blonde', 'brown', 'black', 'red', 'lightRed', 'orange', 'lightOrange', 'green', 'lightGreen', 'turqoise', 'lightTurqoise', 'blue', 'lightBlue', 'pink', 'lightPink', 'purple', 'lightPurple'],
     'graphic': ['none', 'redwood', 'gatsby', 'vue', 'react', 'graphQL', 'donut', 'rainbow'],
     'hair': ['none', 'long', 'bun', 'short', 'pixie', 'balding', 'buzz', 'afro', 'bob', 'mohawk'],
     'hairColor': ['white', 'silver', 'blonde', 'brown', 'black', 'red', 'lightRed', 'orange', 'lightOrange', 'green', 'lightGreen', 'turqoise', 'lightTurqoise', 'blue', 'lightBlue', 'pink', 'lightPink', 'purple', 'lightPurple'],
