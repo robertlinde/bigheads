@@ -10,26 +10,26 @@ export { Noop } from './utils/Noop'
 
 const options = {
     'showBackground': [true, false],
-    'backgroundColor': ['blue', 'green', 'red', 'none'],
+    'backgroundColor': ['red', 'orange', 'yellow', 'green', 'turqoise', 'blue', 'pink', 'purple', 'none'],
     'backgroundShape': ['circle', 'square', 'squircle'],
     'accessory': ['none', 'roundGlasses', 'tinyGlasses', 'shades', 'hoopEarrings'],
     'body': ['chest', 'breasts'],
     'clothing': ['naked', 'shirt', 'dressShirt', 'vneck', 'tankTop', 'dress', 'denimJacket', 'hoodie', 'chequeredShirt', 'chequeredShirtDark'],
-    'clothingColor': ['white', 'blue', 'black', 'green', 'red'],
+    'clothingColor': ['white', 'gray', 'black', 'red', 'lightRed', 'orange', 'lightOrange', 'yellow', 'lightYellow', 'green', 'lightGreen', 'turqoise', 'lightTurqoise', 'blue', 'lightBlue', 'pink', 'lightPink', 'purple', 'lightPurple'],
     'eyebrows': ['raised', 'leftLowered', 'serious', 'angry', 'concerned', 'none'],
     'eyes': ['normal', 'leftTwitch', 'happy', 'content', 'squint', 'simple', 'dizzy', 'wink', 'heart', 'crazy', 'cute', 'dollars', 'stars', 'cyborg', 'simplePatch', 'piratePatch'],
     'facialHair': ['none', 'stubble', 'mediumBeard', 'goatee'],
     'graphic': ['none', 'redwood', 'gatsby', 'vue', 'react', 'graphQL', 'donut', 'rainbow'],
     'hair': ['none', 'long', 'bun', 'short', 'pixie', 'balding', 'buzz', 'afro', 'bob', 'mohawk'],
-    'hairColor': ['blonde', 'orange', 'black', 'white', 'brown', 'blue', 'pink'],
+    'hairColor': ['white', 'silver', 'blonde', 'brown', 'black', 'red', 'lightRed', 'orange', 'lightOrange', 'green', 'lightGreen', 'turqoise', 'lightTurqoise', 'blue', 'lightBlue', 'pink', 'lightPink', 'purple', 'lightPurple'],
     'hat': ['none', 'beanie', 'turban', 'party', 'hijab'],
-    'hatColor': ['white', 'blue', 'black', 'green', 'red'],
+    'hatColor': ['white', 'gray', 'black', 'red', 'lightRed', 'orange', 'lightOrange', 'yellow', 'lightYellow', 'green', 'lightGreen', 'turqoise', 'lightTurqoise', 'blue', 'lightBlue', 'pink', 'lightPink', 'purple', 'lightPurple'],
     'lashes': [true, false],
-    'lipColor': ['red', 'purple', 'pink', 'turqoise', 'green'],
+    'lipColor': ['red', 'lightRed', 'green', 'lightGreen', 'turqoise', 'lightTurqoise', 'blue','lightBlue', 'pink', 'lightPink', 'purple', 'lightPurple'],
     'mouth': ['grin', 'sad', 'openSmile', 'lips', 'open', 'serious', 'tongue', 'piercedTongue', 'vomitingRainbow'],
     'skinTone': ['light', 'yellow', 'brown', 'dark', 'red', 'black'],
     'faceMask': [true, false],
-    'faceMaskColor': ['white', 'blue', 'black', 'green', 'red']
+    'faceMaskColor': ['white', 'gray', 'black', 'red', 'lightRed', 'orange', 'lightOrange', 'yellow', 'lightYellow', 'green', 'lightGreen', 'turqoise', 'lightTurqoise', 'blue', 'lightBlue', 'pink', 'lightPink', 'purple', 'lightPurple']
 }
 
 export { options }
