@@ -7,9 +7,10 @@
 ### Getting Started
 
 1. Clone the repo
-2. npm install
-3. tsdx build
+2. `npm install`
+3. `npm run build`
 4. copy dist folder in project
+5. `import { BigHead } from 'dist/index'` wherever BigHead should be used
 
 then, in your app:
 
