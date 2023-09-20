@@ -1,5 +1,5 @@
 <p align="center" >
-  <img alt="Big Heads Demo" src="demo.gif" />
+  <img alt="Big Heads Demo" src="https://github.com/robertlinde/extended-bigheads/blob/main/demo.gif" />
 </p>
 
 ## About
