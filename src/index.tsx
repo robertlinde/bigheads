@@ -8,7 +8,7 @@ export { ThemeContext } from "./themeContext";
 
 export { Noop } from "./utils/Noop";
 
-const options = {
+const bigHeadOptions = {
   showBackground: [true, false],
   backgroundColor: [
     "red",
@@ -214,4 +214,4 @@ const options = {
   ]
 };
 
-export { options };
+export { bigHeadOptions };
