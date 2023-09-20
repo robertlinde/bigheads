@@ -1,5 +1,5 @@
 {
-  "version": "0.3.3",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -25,7 +25,7 @@
       "pre-commit": "tsdx lint"
     }
   },
-  "name": "@extended-bigheads/core",
+  "name": "extended-bigheads",
   "author": "Robert Linde",
   "module": "dist/core.esm.js",
   "devDependencies": {
