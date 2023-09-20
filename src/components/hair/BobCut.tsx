@@ -1,11 +1,11 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
-import { HairProps } from './types'
+import React from "react";
+import { useTheme } from "../../themeContext";
+import { HairProps } from "./types";
 
 export const Back = ({ hairColor }: HairProps) => {
-  const { colors } = useTheme()
+  const { colors } = useTheme();
 
-  const { base, shadow } = colors.hair[hairColor]
+  const { base, shadow } = colors.hair[hairColor];
 
   return (
     <>
@@ -29,13 +29,13 @@ export const Back = ({ hairColor }: HairProps) => {
         strokeWidth="12px"
       />
     </>
-  )
-}
+  );
+};
 
 export const Front = ({ hairColor }: HairProps) => {
-  const { colors, skin } = useTheme()
+  const { colors, skin } = useTheme();
 
-  const { base } = colors.hair[hairColor]
+  const { base } = colors.hair[hairColor];
 
   return (
     <>
@@ -99,7 +99,7 @@ export const Front = ({ hairColor }: HairProps) => {
         fill={colors.white}
       />
     </>
-  )
-}
+  );
+};
 
-export const hatScale = 1.12
+export const hatScale = 1.12;

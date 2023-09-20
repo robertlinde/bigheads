@@ -1,5 +1,5 @@
-import React from 'react'
-import { colors } from '../../theme'
+import React from "react";
+import { colors } from "../../theme";
 
 export const RedwoodGraphic = () => {
   return (
@@ -17,5 +17,5 @@ export const RedwoodGraphic = () => {
         fillRule="evenodd"
       />
     </>
-  )
-}
+  );
+};

@@ -1,11 +1,11 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
-import { Noop } from '../../utils/Noop'
+import React from "react";
+import { useTheme } from "../../themeContext";
+import { Noop } from "../../utils/Noop";
 
-export const Front = Noop
+export const Front = Noop;
 
 export const Back = () => {
-  const { skin, colors } = useTheme()
+  const { skin, colors } = useTheme();
   return (
     <>
       <path
@@ -33,7 +33,7 @@ export const Back = () => {
         fill={skin.shadow}
       />
     </>
-  )
-}
+  );
+};
 
-export const hasBreasts = false
+export const hasBreasts = false;

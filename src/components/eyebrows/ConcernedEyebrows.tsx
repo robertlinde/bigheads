@@ -1,8 +1,8 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
+import React from "react";
+import { useTheme } from "../../themeContext";
 
 export const ConcernedEyebrows = () => {
-  const { colors } = useTheme()
+  const { colors } = useTheme();
 
   return (
     <>
@@ -15,5 +15,5 @@ export const ConcernedEyebrows = () => {
         fill={colors.outline}
       />
     </>
-  )
-}
+  );
+};

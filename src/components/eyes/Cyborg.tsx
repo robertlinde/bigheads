@@ -1,10 +1,10 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
-import { LeftLash } from './Lashes'
-import { EyeProps } from './types'
+import React from "react";
+import { useTheme } from "../../themeContext";
+import { LeftLash } from "./Lashes";
+import { EyeProps } from "./types";
 
 export const Cyborg = ({ withLashes }: EyeProps) => {
-  const { colors } = useTheme()
+  const { colors } = useTheme();
 
   return (
     <>
@@ -20,8 +20,18 @@ export const Cyborg = ({ withLashes }: EyeProps) => {
         stroke={colors.outline}
         strokeWidth="12"
       />
-      <path d="M589 465H624.5" stroke="#3E3E3E" strokeWidth="12" strokeLinecap="round" />
-      <path d="M589 444H624.5" stroke="#3E3E3E" strokeWidth="12" strokeLinecap="round" />
+      <path
+        d="M589 465H624.5"
+        stroke="#3E3E3E"
+        strokeWidth="12"
+        strokeLinecap="round"
+      />
+      <path
+        d="M589 444H624.5"
+        stroke="#3E3E3E"
+        strokeWidth="12"
+        strokeLinecap="round"
+      />
       <path
         d="M734 473C739.523 473 744 468.523 744 463C744 457.477 739.523 453 734 453C728.477 453 724 457.477 724 463C724 468.523 728.477 473 734 473Z"
         fill="#3E3E3E"
@@ -60,5 +70,5 @@ export const Cyborg = ({ withLashes }: EyeProps) => {
       />
       {withLashes && <LeftLash />}
     </>
-  )
-}
+  );
+};

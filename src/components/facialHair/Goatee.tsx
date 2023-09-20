@@ -1,10 +1,10 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
-import { FacialHairProps } from './types'
+import React from "react";
+import { useTheme } from "../../themeContext";
+import { FacialHairProps } from "./types";
 
 export const Goatee = ({ color }: FacialHairProps) => {
-  const { colors } = useTheme()
-  const { base } = colors.hair[color]
+  const { colors } = useTheme();
+  const { base } = colors.hair[color];
 
   return (
     <>
@@ -16,5 +16,5 @@ export const Goatee = ({ color }: FacialHairProps) => {
         strokeLinejoin="round"
       />
     </>
-  )
-}
+  );
+};

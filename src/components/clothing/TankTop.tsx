@@ -1,12 +1,12 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
-import { ClothingProps } from './types'
-import { Noop } from '../../utils/Noop'
+import React from "react";
+import { useTheme } from "../../themeContext";
+import { ClothingProps } from "./types";
+import { Noop } from "../../utils/Noop";
 
 export const TankTop = ({ color, graphic: Graphic = Noop }: ClothingProps) => {
-  const { colors } = useTheme()
+  const { colors } = useTheme();
 
-  const { base, shadow } = colors.clothing[color]
+  const { base, shadow } = colors.clothing[color];
 
   return (
     <>
@@ -55,5 +55,5 @@ export const TankTop = ({ color, graphic: Graphic = Noop }: ClothingProps) => {
         <Graphic />
       </g>
     </>
-  )
-}
+  );
+};

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export const Vue = () => {
   return (
@@ -18,5 +18,5 @@ export const Vue = () => {
         fill="#364a5e"
       />
     </>
-  )
-}
+  );
+};

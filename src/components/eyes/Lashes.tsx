@@ -1,8 +1,8 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
+import React from "react";
+import { useTheme } from "../../themeContext";
 
 export const RightLash = () => {
-  const { colors } = useTheme()
+  const { colors } = useTheme();
 
   return (
     <path
@@ -10,11 +10,11 @@ export const RightLash = () => {
       fill={colors.outline}
       fillRule="evenodd"
     />
-  )
-}
+  );
+};
 
 export const LeftLash = () => {
-  const { colors } = useTheme()
+  const { colors } = useTheme();
 
   return (
     <path
@@ -22,5 +22,5 @@ export const LeftLash = () => {
       fill={colors.outline}
       fillRule="evenodd"
     />
-  )
-}
+  );
+};

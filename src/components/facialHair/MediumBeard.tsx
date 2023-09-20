@@ -1,10 +1,10 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
-import { FacialHairProps } from './types'
+import React from "react";
+import { useTheme } from "../../themeContext";
+import { FacialHairProps } from "./types";
 
 export const MediumBeard = ({ color }: FacialHairProps) => {
-  const { colors } = useTheme()
-  const { base, shadow } = colors.hair[color]
+  const { colors } = useTheme();
+  const { base, shadow } = colors.hair[color];
 
   return (
     <>
@@ -60,5 +60,5 @@ export const MediumBeard = ({ color }: FacialHairProps) => {
         fill={colors.outline}
       />
     </>
-  )
-}
+  );
+};

@@ -1,8 +1,8 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
+import React from "react";
+import { useTheme } from "../../themeContext";
 
 export const ReactGraphic = () => {
-  const { colors } = useTheme()
+  const { colors } = useTheme();
 
   return (
     <>
@@ -24,5 +24,5 @@ export const ReactGraphic = () => {
       />
       <circle cx="499.97" cy="917.83" r="12.46" fill="#61dafb" />
     </>
-  )
-}
+  );
+};

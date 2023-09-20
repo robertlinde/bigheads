@@ -1,8 +1,8 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
+import React from "react";
+import { useTheme } from "../../themeContext";
 
 export const StubbleBeard = () => {
-  const { colors } = useTheme()
+  const { colors } = useTheme();
 
   return (
     <>
@@ -24,5 +24,5 @@ export const StubbleBeard = () => {
       <circle cx="642.96" cy="663.22" r="2.96" fill={colors.outline} />
       <circle cx="654.05" cy="673.06" r="2.96" fill={colors.outline} />
     </>
-  )
-}
+  );
+};

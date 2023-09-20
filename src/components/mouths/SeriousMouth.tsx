@@ -1,8 +1,8 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
+import React from "react";
+import { useTheme } from "../../themeContext";
 
 export const SeriousMouth = () => {
-  const { colors } = useTheme()
+  const { colors } = useTheme();
 
   return (
     <line
@@ -16,5 +16,5 @@ export const SeriousMouth = () => {
       strokeMiterlimit={10}
       strokeWidth="12px"
     />
-  )
-}
+  );
+};

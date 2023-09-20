@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export const GatsbyGraphic = () => {
   return (
@@ -14,5 +14,5 @@ export const GatsbyGraphic = () => {
         fill="#663795"
       />
     </>
-  )
-}
+  );
+};

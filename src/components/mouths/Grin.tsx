@@ -1,8 +1,8 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
+import React from "react";
+import { useTheme } from "../../themeContext";
 
 export const Grin = () => {
-  const { colors } = useTheme()
+  const { colors } = useTheme();
 
   return (
     <>
@@ -34,5 +34,5 @@ export const Grin = () => {
         strokeWidth="12px"
       />
     </>
-  )
-}
+  );
+};

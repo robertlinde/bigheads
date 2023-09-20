@@ -1,11 +1,11 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
-import { BodyProps } from './types'
+import React from "react";
+import { useTheme } from "../../themeContext";
+import { BodyProps } from "./types";
 
 export const Front = ({ clothingColor }: BodyProps) => {
-  const { colors } = useTheme()
+  const { colors } = useTheme();
 
-  const { base } = colors.clothing[clothingColor]
+  const { base } = colors.clothing[clothingColor];
 
   return (
     <>
@@ -38,13 +38,13 @@ export const Front = ({ clothingColor }: BodyProps) => {
         fill={colors.outline}
       />
     </>
-  )
-}
+  );
+};
 
 export const Back = ({ clothingColor, braStraps }: BodyProps) => {
-  const { skin, colors } = useTheme()
+  const { skin, colors } = useTheme();
 
-  const { base, shadow } = colors.clothing[clothingColor]
+  const { base, shadow } = colors.clothing[clothingColor];
 
   return (
     <>
@@ -147,7 +147,7 @@ export const Back = ({ clothingColor, braStraps }: BodyProps) => {
         fill={colors.white}
       />
     </>
-  )
-}
+  );
+};
 
-export const hasBreasts = true
+export const hasBreasts = true;

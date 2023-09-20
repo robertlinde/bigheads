@@ -1,8 +1,8 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
+import React from "react";
+import { useTheme } from "../../themeContext";
 
 export const SimpleEyes = () => {
-  const { colors } = useTheme()
+  const { colors } = useTheme();
 
   return (
     <>
@@ -17,5 +17,5 @@ export const SimpleEyes = () => {
         fill={colors.outline}
       />
     </>
-  )
-}
+  );
+};

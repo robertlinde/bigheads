@@ -1,5 +1,5 @@
-import { colors } from '../../theme'
+import { colors } from "../../theme";
 
 export interface MouthProps {
-  lipColor?: keyof typeof colors.lipColors
+  lipColor?: keyof typeof colors.lipColors;
 }

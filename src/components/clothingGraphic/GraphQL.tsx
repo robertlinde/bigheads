@@ -1,8 +1,8 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
+import React from "react";
+import { useTheme } from "../../themeContext";
 
 export const GraphQLGraphic = () => {
-  const { colors } = useTheme()
+  const { colors } = useTheme();
 
   return (
     <>
@@ -16,5 +16,5 @@ export const GraphQLGraphic = () => {
         fill="#e535ab"
       />
     </>
-  )
-}
+  );
+};

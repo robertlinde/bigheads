@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export const Rainbow = () => {
   return (
@@ -36,5 +36,5 @@ export const Rainbow = () => {
         fill="#D3D3D3"
       />
     </>
-  )
-}
+  );
+};

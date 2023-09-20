@@ -1,5 +1,5 @@
-import React from 'react'
-import { BgMaskProps } from './types'
+import React from "react";
+import { BgMaskProps } from "./types";
 
 export const BgSquircleMask = ({ id }: BgMaskProps) => {
   return (
@@ -17,5 +17,5 @@ export const BgSquircleMask = ({ id }: BgMaskProps) => {
         fill="white"
       />
     </mask>
-  )
-}
+  );
+};

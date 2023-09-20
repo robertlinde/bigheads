@@ -1,15 +1,15 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
-import { ClothingProps } from './types'
-import { Noop } from '../../utils/Noop'
+import React from "react";
+import { useTheme } from "../../themeContext";
+import { ClothingProps } from "./types";
+import { Noop } from "../../utils/Noop";
 
 export const DressShirt = ({
   color,
-  graphic: Graphic = Noop,
+  graphic: Graphic = Noop
 }: ClothingProps) => {
-  const { colors, skin } = useTheme()
+  const { colors, skin } = useTheme();
 
-  const { base } = colors.clothing[color]
+  const { base } = colors.clothing[color];
 
   return (
     <>
@@ -170,5 +170,5 @@ export const DressShirt = ({
         fill={colors.outline}
       />
     </>
-  )
-}
+  );
+};

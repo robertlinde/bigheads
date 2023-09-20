@@ -1,10 +1,10 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
-import { LeftLash } from './Lashes'
-import { EyeProps } from './types'
+import React from "react";
+import { useTheme } from "../../themeContext";
+import { LeftLash } from "./Lashes";
+import { EyeProps } from "./types";
 
 export const PiratePatch = ({ withLashes }: EyeProps) => {
-  const { colors } = useTheme()
+  const { colors } = useTheme();
 
   return (
     <>
@@ -45,5 +45,5 @@ export const PiratePatch = ({ withLashes }: EyeProps) => {
       />
       {withLashes && <LeftLash />}
     </>
-  )
-}
+  );
+};

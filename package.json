@@ -20,8 +20,13 @@
   "peerDependencies": {
     "react": ">=16"
   },
-  "name": "@bigheads/core",
-  "author": "Robert Broersma",
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "name": "@extended-bigheads/core",
+  "author": "Robert Linde",
   "module": "dist/core.esm.js",
   "devDependencies": {
     "@types/react": "^16.9.41",

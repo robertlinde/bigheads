@@ -1,16 +1,16 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
-import { ClothingProps } from '../clothing/types'
-import { HatProps } from './types'
-import { Noop } from '../../utils/Noop'
+import React from "react";
+import { useTheme } from "../../themeContext";
+import { ClothingProps } from "../clothing/types";
+import { HatProps } from "./types";
+import { Noop } from "../../utils/Noop";
 
 export const Front = ({ color, scale = 1 }: ClothingProps & HatProps) => {
-  const { colors } = useTheme()
+  const { colors } = useTheme();
 
-  const { base, shadow } = colors.clothing[color]
+  const { base, shadow } = colors.clothing[color];
 
   return (
-    <g style={{ transformOrigin: 'center' }} transform={`scale(${scale})`}>
+    <g style={{ transformOrigin: "center" }} transform={`scale(${scale})`}>
       <path
         d="M765.63,495.43s.3-2.94.8-8.24C759.75,345.82,643,233.25,500,233.25c-147.32,0-266.75,119.43-266.75,266.75,0,7.28.31,14.49.89,21.63,12.11-39.32,161.32-77.95,298.44-133.08C631.75,452.24,765.63,495.43,765.63,495.43Z"
         opacity={0.15}
@@ -63,7 +63,7 @@ export const Front = ({ color, scale = 1 }: ClothingProps & HatProps) => {
         fill={colors.outline}
       />
     </g>
-  )
-}
+  );
+};
 
-export const Back = Noop
+export const Back = Noop;

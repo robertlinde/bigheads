@@ -1,14 +1,14 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
-import { colors as themeColors } from '../../theme'
+import React from "react";
+import { useTheme } from "../../themeContext";
+import { colors as themeColors } from "../../theme";
 
 interface FaceMaskProps {
-  color: keyof typeof themeColors.clothing
+  color: keyof typeof themeColors.clothing;
 }
 
 export const FaceMask = ({ color }: FaceMaskProps) => {
-  const { colors, skin } = useTheme()
-  const { base, shadow } = colors.clothing[color]
+  const { colors, skin } = useTheme();
+  const { base, shadow } = colors.clothing[color];
 
   return (
     <>
@@ -61,5 +61,5 @@ export const FaceMask = ({ color }: FaceMaskProps) => {
         strokeWidth="12px"
       />
     </>
-  )
-}
+  );
+};

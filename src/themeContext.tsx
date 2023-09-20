@@ -1,9 +1,9 @@
-import React, { useContext } from 'react'
-import { colors } from './theme'
+import React, { useContext } from "react";
+import { colors } from "./theme";
 
 export const ThemeContext = React.createContext({
   colors,
-  skin: colors.skin.light,
-})
+  skin: colors.skin.light
+});
 
-export const useTheme = () => useContext(ThemeContext)
+export const useTheme = () => useContext(ThemeContext);

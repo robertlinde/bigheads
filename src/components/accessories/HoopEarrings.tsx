@@ -1,8 +1,8 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
+import React from "react";
+import { useTheme } from "../../themeContext";
 
 export const HoopEarrings = () => {
-  const { colors } = useTheme()
+  const { colors } = useTheme();
 
   return (
     <>
@@ -19,5 +19,5 @@ export const HoopEarrings = () => {
         strokeWidth="2"
       />
     </>
-  )
-}
+  );
+};

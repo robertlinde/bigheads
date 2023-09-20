@@ -1,15 +1,15 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
-import { HairProps } from './types'
+import React from "react";
+import { useTheme } from "../../themeContext";
+import { HairProps } from "./types";
 
 export const Back = () => {
-  return <></>
-}
+  return <></>;
+};
 
 export const Front = ({ hairColor, hasHat = false }: HairProps) => {
-  const { colors, skin } = useTheme()
+  const { colors, skin } = useTheme();
 
-  const { base, shadow } = colors.hair[hairColor]
+  const { base, shadow } = colors.hair[hairColor];
 
   return (
     <>
@@ -83,5 +83,5 @@ export const Front = ({ hairColor, hasHat = false }: HairProps) => {
       <circle cx="514.26" cy="233.25" r="5.84" fill={colors.outline} />
       <circle cx="497.99" cy="233.25" r="4.13" fill={colors.outline} />
     </>
-  )
-}
+  );
+};

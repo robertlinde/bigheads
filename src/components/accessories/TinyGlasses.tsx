@@ -1,8 +1,8 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
+import React from "react";
+import { useTheme } from "../../themeContext";
 
 export const TinyGlasses = () => {
-  const { colors } = useTheme()
+  const { colors } = useTheme();
 
   return (
     <>
@@ -76,5 +76,5 @@ export const TinyGlasses = () => {
         opacity={0.15}
       />
     </>
-  )
-}
+  );
+};

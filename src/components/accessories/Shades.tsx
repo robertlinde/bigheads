@@ -1,8 +1,8 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
+import React from "react";
+import { useTheme } from "../../themeContext";
 
 export const Shades = () => {
-  const { colors } = useTheme()
+  const { colors } = useTheme();
 
   return (
     <>
@@ -78,5 +78,5 @@ export const Shades = () => {
         strokeWidth="20px"
       />
     </>
-  )
-}
+  );
+};

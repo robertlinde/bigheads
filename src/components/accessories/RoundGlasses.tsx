@@ -1,8 +1,8 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
+import React from "react";
+import { useTheme } from "../../themeContext";
 
 export const RoundGlasses = () => {
-  const { colors } = useTheme()
+  const { colors } = useTheme();
 
   return (
     <>
@@ -73,5 +73,5 @@ export const RoundGlasses = () => {
         fill="white"
       />
     </>
-  )
-}
+  );
+};

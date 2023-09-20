@@ -1,12 +1,12 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
-import { Noop } from '../../utils/Noop'
+import React from "react";
+import { useTheme } from "../../themeContext";
+import { Noop } from "../../utils/Noop";
 
 export const Front = () => {
-  const { colors } = useTheme()
+  const { colors } = useTheme();
 
   return (
-    <g style={{ transformOrigin: 'center' }} transform={`scale(1)`}>
+    <g style={{ transformOrigin: "center" }} transform={`scale(1)`}>
       <path
         d="M477.706 297.731C476.729 299.149 476.77 301.033 477.806 302.407C491.491 320.567 519.231 338.299 554.786 349.624C590.468 360.989 634.48 366.056 681.144 358.448C683.182 358.116 684.632 356.286 684.491 354.226L662.991 41.2259C662.874 39.5288 661.697 38.0911 660.056 37.642C658.416 37.1928 656.67 37.8304 655.706 39.2315L477.706 297.731Z"
         fill="#79D1FF"
@@ -14,7 +14,10 @@ export const Front = () => {
         strokeWidth="8"
         strokeLinejoin="round"
       />
-      <path d="M481 300C507 334.5 588.5 369.5 680.5 354.5L659 41.5V339C615 347.5 507 334.5 481 300Z" fill="#4FB5EB" />
+      <path
+        d="M481 300C507 334.5 588.5 369.5 680.5 354.5L659 41.5V339C615 347.5 507 334.5 481 300Z"
+        fill="#4FB5EB"
+      />
       <path
         d="M678 272C628 297 554 296.5 491.5 280L527 229.5C575.5 239.5 624.5 238.5 674.5 221.5L678 272Z"
         fill="#FFDA58"
@@ -59,7 +62,7 @@ export const Front = () => {
         fill={colors.outline}
       />
     </g>
-  )
-}
+  );
+};
 
-export const Back = Noop
+export const Back = Noop;

@@ -1,3 +1,3 @@
 export interface EyeProps {
-  withLashes?: boolean
+  withLashes?: boolean;
 }

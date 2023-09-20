@@ -1,60 +1,60 @@
-import React from 'react'
-import { colors } from '../theme'
-import { useTheme } from '../themeContext'
-import { Noop } from '../utils/Noop'
-import { FacialHairProps } from './facialHair/types'
-import { HairProps } from './hair/types'
-import { ClothingProps } from './clothing/types'
-import { MouthProps } from './mouths/types'
-import { BodyProps } from './bodies/types'
-import { HatProps } from './hats/types'
-import { EyeProps } from './eyes/types'
-import { DressShirt } from './clothing/DressShirt'
-import { FaceMask } from './faceMask/FaceMask'
-import { BackgroundShapeProps, BgMaskProps } from './backgrounds/types'
+import React from "react";
+import { colors } from "../theme";
+import { useTheme } from "../themeContext";
+import { Noop } from "../utils/Noop";
+import { FacialHairProps } from "./facialHair/types";
+import { HairProps } from "./hair/types";
+import { ClothingProps } from "./clothing/types";
+import { MouthProps } from "./mouths/types";
+import { BodyProps } from "./bodies/types";
+import { HatProps } from "./hats/types";
+import { EyeProps } from "./eyes/types";
+import { DressShirt } from "./clothing/DressShirt";
+import { FaceMask } from "./faceMask/FaceMask";
+import { BackgroundShapeProps, BgMaskProps } from "./backgrounds/types";
 
 interface BaseProps {
-  eyes: React.ComponentType<EyeProps>
-  eyebrows: React.ComponentType
-  mouth: React.ComponentType<MouthProps>
+  eyes: React.ComponentType<EyeProps>;
+  eyebrows: React.ComponentType;
+  mouth: React.ComponentType<MouthProps>;
   hair?: {
-    Front: React.ComponentType<HairProps>
-    Back: React.ComponentType<HairProps>
-    hatScale?: number
-  }
-  facialHair: React.ComponentType<FacialHairProps>
-  accessory: React.ComponentType
-  graphic: React.ComponentType
+    Front: React.ComponentType<HairProps>;
+    Back: React.ComponentType<HairProps>;
+    hatScale?: number;
+  };
+  facialHair: React.ComponentType<FacialHairProps>;
+  accessory: React.ComponentType;
+  graphic: React.ComponentType;
   hat: {
-    Front: React.ComponentType<ClothingProps & HatProps>
-    Back: React.ComponentType<ClothingProps & HatProps>
-  }
+    Front: React.ComponentType<ClothingProps & HatProps>;
+    Back: React.ComponentType<ClothingProps & HatProps>;
+  };
   body: {
-    Front: React.ComponentType<BodyProps>
-    Back: React.ComponentType<BodyProps>
-    hasBreasts: boolean
-  }
+    Front: React.ComponentType<BodyProps>;
+    Back: React.ComponentType<BodyProps>;
+    hasBreasts: boolean;
+  };
   clothing: {
-    Front: React.ComponentType<ClothingProps>
-    Back: React.ComponentType<ClothingProps>
-    braStraps?: boolean
-  }
+    Front: React.ComponentType<ClothingProps>;
+    Back: React.ComponentType<ClothingProps>;
+    braStraps?: boolean;
+  };
 
-  clothingColor: keyof typeof colors.clothing
-  hairColor: keyof typeof colors.hair
-  facialHairColor: keyof typeof colors.hair
+  clothingColor: keyof typeof colors.clothing;
+  hairColor: keyof typeof colors.hair;
+  facialHairColor: keyof typeof colors.hair;
   backgroundShape: {
-    Shape: React.ComponentType<BackgroundShapeProps>
-    Mask: React.ComponentType<BgMaskProps>
-  }
-  backgroundColor: keyof typeof colors.backgroundColors
-  lipColor: keyof typeof colors.lipColors
-  hatColor: keyof typeof colors.clothing
-  faceMaskColor: keyof typeof colors.clothing
+    Shape: React.ComponentType<BackgroundShapeProps>;
+    Mask: React.ComponentType<BgMaskProps>;
+  };
+  backgroundColor: keyof typeof colors.backgroundColors;
+  lipColor: keyof typeof colors.lipColors;
+  hatColor: keyof typeof colors.clothing;
+  faceMaskColor: keyof typeof colors.clothing;
 
-  showBackground: boolean
-  faceMask: boolean
-  lashes: boolean
+  showBackground: boolean;
+  faceMask: boolean;
+  lashes: boolean;
 }
 
 export const Base = React.forwardRef<SVGSVGElement, BaseProps>(
@@ -86,19 +86,19 @@ export const Base = React.forwardRef<SVGSVGElement, BaseProps>(
 
       ...rest
     },
-    ref,
+    ref
   ) => {
-    const { skin } = useTheme()
+    const { skin } = useTheme();
 
-    const { Front: FrontHair, Back: BackHair, hatScale } = hair
-    const { Front: FrontHat, Back: BackHat } = hat
-    const { Front: FrontBody, Back: BackBody, hasBreasts } = body
-    const { Shape: BackgroundShape, Mask: BgMask } = backgroundShape
+    const { Front: FrontHair, Back: BackHair, hatScale } = hair;
+    const { Front: FrontHat, Back: BackHat } = hat;
+    const { Front: FrontBody, Back: BackBody, hasBreasts } = body;
+    const { Shape: BackgroundShape, Mask: BgMask } = backgroundShape;
     const {
       Front: ClothingFront,
       Back: ClothingBack,
-      braStraps = true,
-    } = clothing
+      braStraps = true
+    } = clothing;
 
     return (
       <svg
@@ -109,7 +109,9 @@ export const Base = React.forwardRef<SVGSVGElement, BaseProps>(
       >
         {showBackground && <BgMask id="mask" />}
         <g mask={showBackground ? `url(#mask)` : undefined}>
-          {showBackground && <BackgroundShape backgroundColor={backgroundColor} />}
+          {showBackground && (
+            <BackgroundShape backgroundColor={backgroundColor} />
+          )}
           <BackHat color={hatColor} scale={hatScale} />
           <BackHair hairColor={hairColor} hasHat={FrontHat !== Noop} />
           <path
@@ -196,16 +198,24 @@ export const Base = React.forwardRef<SVGSVGElement, BaseProps>(
           />
 
           <BackBody clothingColor={clothingColor} braStraps={braStraps} />
-          <ClothingBack color={clothingColor} graphic={Graphic} hasBreasts={hasBreasts} />
+          <ClothingBack
+            color={clothingColor}
+            graphic={Graphic}
+            hasBreasts={hasBreasts}
+          />
           {!(ClothingFront === Noop && ClothingBack === Noop) && (
             <FrontBody
               clothingColor={
-                ClothingBack === DressShirt ? 'white' : clothingColor
+                ClothingBack === DressShirt ? "white" : clothingColor
               }
               braStraps={braStraps}
             />
           )}
-          <ClothingFront color={clothingColor} graphic={Graphic} hasBreasts={hasBreasts} />
+          <ClothingFront
+            color={clothingColor}
+            graphic={Graphic}
+            hasBreasts={hasBreasts}
+          />
           {!faceMask && <FacialHair color={facialHairColor} />}
           <Eyes withLashes={lashes} />
           <Mouth lipColor={lipColor} />
@@ -216,6 +226,6 @@ export const Base = React.forwardRef<SVGSVGElement, BaseProps>(
           <Accessory />
         </g>
       </svg>
-    )
-  },
-)
+    );
+  }
+);

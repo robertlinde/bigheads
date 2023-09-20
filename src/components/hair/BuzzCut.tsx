@@ -1,14 +1,14 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
-import { HairProps } from './types'
-import { Noop } from '../../utils/Noop'
+import React from "react";
+import { useTheme } from "../../themeContext";
+import { HairProps } from "./types";
+import { Noop } from "../../utils/Noop";
 
-export const Back = Noop
+export const Back = Noop;
 
 export const Front = ({ hairColor }: HairProps) => {
-  const { colors } = useTheme()
+  const { colors } = useTheme();
 
-  const { base, shadow } = colors.hair[hairColor]
+  const { base, shadow } = colors.hair[hairColor];
 
   return (
     <>
@@ -32,5 +32,5 @@ export const Front = ({ hairColor }: HairProps) => {
         fill={colors.white}
       />
     </>
-  )
-}
+  );
+};

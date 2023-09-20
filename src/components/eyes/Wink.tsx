@@ -1,10 +1,10 @@
-import React from 'react'
-import { useTheme } from '../../themeContext'
-import { EyeProps } from './types'
-import { LeftLash } from './Lashes'
+import React from "react";
+import { useTheme } from "../../themeContext";
+import { EyeProps } from "./types";
+import { LeftLash } from "./Lashes";
 
 export const WinkEyes = ({ withLashes }: EyeProps) => {
-  const { colors, skin } = useTheme()
+  const { colors, skin } = useTheme();
 
   return (
     <>
@@ -38,5 +38,5 @@ export const WinkEyes = ({ withLashes }: EyeProps) => {
 
       {withLashes && <LeftLash />}
     </>
-  )
-}
+  );
+};

@@ -1,6 +1,6 @@
-import { colors } from '../../theme'
+import { colors } from "../../theme";
 
 export interface HairProps {
-  hairColor: keyof typeof colors.hair
-  hasHat?: boolean
+  hairColor: keyof typeof colors.hair;
+  hasHat?: boolean;
 }
