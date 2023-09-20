@@ -5,22 +5,19 @@
 ## About
 
 Did you ever want to create a Big Head version of your self? Or do you want to offer users an easy creation of avatars for your application? Here you go! 🚀\
-This projects extends the [original Big Heads implementation](https://github.com/RobertBroersma/bigheads) with features of the [React Native Big Heads implementation](https://github.com/felipecespedes/react-native-bigheads) and the [Vue Big Heads implementation](https://github.com/DerpyScripts/vue-bigheads), giving it a rich set of options to style your Big Head Avatar.
+This projects extends the [Original Big Heads implementation](https://github.com/RobertBroersma/bigheads) with features of the [React Native Big Heads implementation](https://github.com/felipecespedes/react-native-bigheads) and the [Vue Big Heads implementation](https://github.com/DerpyScripts/vue-bigheads), giving it a rich set of options to style your Big Head Avatar.
 
 ## Try it
 
 ### Getting Started
 
-1. Clone the repo
-2. `npm install`
-3. `npm run build`
-4. copy dist folder in project
-5. `import { BigHead } from 'dist/index'` wherever BigHead should be used
+1. `npm i extended-bigheads`
+2. `import { BigHead } from 'extended-bigheads'` wherever BigHead should be used
 
 then, in your app:
 
 ```jsx
-import { BigHead } from "dist/index";
+import { BigHead } from "extended-bigheads";
 
 const Example = () => (
   <BigHead
@@ -50,10 +47,21 @@ const Example = () => (
 );
 ```
 
-To retrieve a object with all options possible, use
+To retrieve an object with all options possible, use
 
 ```jsx
-import { options } from "dist/index";
+import { bigHeadOptions } from "extended-bigheads";
+```
+
+_bigHeadOptions_ will look like this:
+
+```js
+{
+  accessory: ['none', 'roundGlasses', 'tinyGlasses', ...],
+  backgroundColor: ['red', 'orange', 'yellow', ...],
+  backgroundShape: ['circle', 'square', 'squircle'],
+  ...
+}
 ```
 
 ### Props
