@@ -33,6 +33,15 @@
     "type": "git",
     "url": "https://github.com/robertlinde/extended-bigheads.git"
   },
+  "description": "Create charming Big Head avatars effortlessly with this component. Perfect for adding personality to user profiles, chatbots, and apps. Easy integration for eye-catching results.",
+  "keywords": [
+    "avatar",
+    "avatar-generator",
+    "component",
+    "react",
+    "react-components",
+    "big-head"
+  ],
   "devDependencies": {
     "@types/react": "^16.9.41",
     "@types/react-dom": "^16.9.8",
