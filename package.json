@@ -28,6 +28,11 @@
   "name": "extended-bigheads",
   "author": "Robert Linde",
   "module": "dist/core.esm.js",
+  "homepage": "https://github.com/robertlinde/extended-bigheads#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robertlinde/extended-bigheads.git"
+  },
   "devDependencies": {
     "@types/react": "^16.9.41",
     "@types/react-dom": "^16.9.8",
