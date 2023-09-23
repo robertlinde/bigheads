@@ -12,12 +12,17 @@ This projects extends the [Original Big Heads implementation](https://github.com
 ### Getting Started
 
 1. `npm i extended-bigheads`
-2. `import { BigHead } from 'extended-bigheads'` wherever BigHead should be used
+2. ```js
+   import { BigHead } from "extended-bigheads";
+   // or
+   const { BigHead } = require("extended-bigheads");
+   ```
 
 then, in your app:
 
 ```jsx
 import { BigHead } from "extended-bigheads";
+// or const { BigHead } = require("extended-bigheads");
 
 const Example = () => (
   <BigHead
@@ -51,6 +56,8 @@ To retrieve an object with all options possible, use
 
 ```jsx
 import { bigHeadOptions } from "extended-bigheads";
+// or
+const { bigHeadOptions } = require("extended-bigheads");
 ```
 
 _bigHeadOptions_ will look like this:
